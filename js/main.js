@@ -86,3 +86,26 @@ burgerMenuBtn.addEventListener('click', (e) => {
         behavior: 'smooth'
     });
 })
+
+const tabBtns = document.querySelectorAll('.tab');
+const tabContentBlocks = document.querySelectorAll('.whoUsesCalccontainerTabsInner');
+
+const switchTab = (n) => {
+  tabBtns.forEach((item, i) => {
+    item.classList.add('--tabActive');
+    tabContentBlocks[i].classList.add('--tabContentActive');
+
+    if (i === n) return;
+
+    item.classList.remove('--tabActive');
+    tabContentBlocks[i].classList.remove('--tabContentActive');
+  })
+}
+
+switchTab(0);
+
+tabBtns.forEach((item, i) => {
+  item.addEventListener('click', (e) => {
+    switchTab(i);
+  })
+})
