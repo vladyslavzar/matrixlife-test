@@ -123,6 +123,11 @@ input{
 		line-height: 19px;
 	}
 }
+@media screen and (max-width: 380px) {
+	h2{
+		font-size: 24px;
+	}
+}
 .btn{
 	max-width: 243px;
 	height: 78px;
@@ -130,8 +135,8 @@ input{
 	background: $main;
 	color: $white;
 	line-height: 78px;
-	font-size: 20px;
 	transition: .3s;
+	font-size: 20px;
 	&:hover{
 		background: $white;
 		color: $main;
@@ -146,9 +151,9 @@ input{
 	}
 }
 .altBtn{
-	font-size: 22px;
 	max-width: 243px;
 	height: 78px;
+	font-size: 20px;
 	width: 100%;
 	background: $yellowRed;
 	color: $main;
@@ -186,12 +191,12 @@ input{
 .header{
 	min-height: 1050px;
 	margin-bottom: 50px;
-	background-image: url(../images/headerBgSmallMobile.png);
+	background-image: url(../images/headerBgMiniMobile.png);
 	background-position: top;
 	background-size: 100%;
 	background-repeat: no-repeat;
 	color: $main;
-	&container{
+	&Container{
 		display: flex;
 		flex-direction: column;
 		align-items: center;
@@ -239,7 +244,7 @@ input{
 			button{
 				border-radius: 0 !important;
 				&:first-of-type{
-					width: 200px;
+					width: 291px;
 					height: 50px;
 					line-height: 50px;
 				}
@@ -278,7 +283,7 @@ input{
 				width: 100%;
 				display: flex;
 				justify-content: space-between;
-				margin-bottom: 40px;
+				margin-bottom: 30px;
 				margin-top: 30px;
 				div{
 					border-bottom: 1px solid #1B3840;
@@ -385,12 +390,15 @@ input{
 	width: 100%;
 	margin-bottom: 70px;
 	color: $white;
-	&container{
+	&Container{
 		text-align: center;
 		&Top{
-			text-align: start;
+			
 			max-width: fit-content;
 			margin: 0 auto;
+			.line{
+				display: inline-block;
+			}
 		}
 		p{
 			margin: 30px 0 40px 0;
@@ -412,7 +420,7 @@ input{
 	width: 100%;
 	background-color: $yellowRed;
 	margin-bottom: 156px;
-	&container{
+	&Container{
 		position: relative;
 		&Inner{
 			max-width: 461px;
@@ -429,7 +437,11 @@ input{
 			justify-content: space-between;
 			&Top{
 				width: 100%;
-				max-width: 320px;
+				max-width: 236px;
+				text-align: center;
+				.line{
+					display: inline-block;
+				}
 			}
 			&Row{
 				display: flex;
@@ -437,7 +449,7 @@ input{
 				width: 100%;
 				padding-right: 20px;
 				&Item{
-					max-width: 209px;
+					max-width: 158px;
 					width: 100%;
 					&:first-of-type{
 						max-width: fit-content;
@@ -458,7 +470,7 @@ input{
 	width: 100%;
 	color: $white;
 	margin-bottom: 40px;
-	&container{
+	&Container{
 		&Top{
 			display: flex;
 			flex-direction: column;
@@ -481,7 +493,7 @@ input{
 	width: 100%;
 	background-color: $yellowRed;
 	margin-bottom: 70px;
-	&container{
+	&Container{
 		padding: 30px 24px;
 		text-align: center;
 		p{
@@ -494,7 +506,7 @@ input{
 	width: 100%;
 	color: $white;
 	margin-bottom: 70px;
-	&container{
+	&Container{
 		display: flex;
 		flex-direction: column;
 		align-items: center;
@@ -580,7 +592,7 @@ input{
 	width: 100%;
 	color: $white;
 	margin-bottom: 70px;
-	&container{
+	&Container{
 		display: flex;
 		align-items: center;
 		flex-direction: column;
@@ -601,14 +613,15 @@ input{
 
 .whyYouNeedMatrix{
 	background-image: url(../images/youNeedMatrix/background.png);
+	background-size: cover;
 	width: 100%;
-	background-size: 100%;
 	min-height: 952px;
 	padding-top: 50px;
 	color: $main;
 	background-repeat: no-repeat;
 	margin-bottom: 70px;
-	&container{
+	max-height: 950px;
+	&Container{
 		&Top{
 			margin: 0 auto;
 			max-width: fit-content;
@@ -622,14 +635,16 @@ input{
 			justify-content: space-between;
 			&Left{
 				width: 100%;
+				min-width: 175px;
 				&Item{
 					display: flex;
 					line-height: 19px;
 					max-width: 211px;
-					margin-bottom: 45px;
+					margin-bottom: 40px;
 					width: 100%;
 					img{
 						margin-right: 8px;
+						width: 35px !important;
 					}
 					&:nth-of-type(1){
 						color: #DC0111;
@@ -662,7 +677,574 @@ input{
 			}
 			img{
 				max-height: 267px;
-				max-width: 240px;
+				
+				&:first-of-type{
+					max-width: 194px;
+					max-height: 193px;
+				}
+			}
+		}
+	}
+}
+
+.work{
+	width: 100%;
+	text-align: center;
+	color: $white;
+	margin-bottom: 70px;
+	&Container{
+		&Top{
+			text-align: center;
+			margin-bottom: 30px;
+			.line{
+				display: inline-block;
+			}
+			h1{
+				margin-bottom: 10px;
+			}
+		}
+		p{
+			line-height: 140%;
+		}
+		img{
+			margin-bottom: 30px;
+			width: 100%;
+		}
+		button{
+			border: 1px solid #FAFAFE;
+			height: 73px;
+			line-height: 73px;
+			max-width: 316px;
+		}
+	}
+}
+
+.recomendations{
+	width: 100%;
+	text-align: center;
+	color: $white;
+	margin-bottom: 50px;
+	&Container{
+		&Top{
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			margin-bottom: 30px;
+			h1{
+				margin-bottom: 10px;
+			}
+		}
+	}
+}
+
+.weOffer{
+	width: 100%;
+	background-color: $white;
+	color: $main;
+	&Container{
+		padding-top: 37px;
+		padding-bottom: 30px;
+		text-align: center;
+		h2{
+			margin-bottom: 30px;
+		}
+		&Grid{
+			display: grid;
+			grid-template-columns: repeat(1, 100% [col-start]);
+			grid-template-rows: repeat(9, auto [row-start]);
+			row-gap: 35px;
+			&Item{
+				img{
+					margin-bottom: 20px;
+				}
+			}
+		}
+		button{
+			width: 100%;
+			max-width: none;
+			border: none;
+		}
+	}
+}
+
+.desiredJob{
+	width: 100%;
+	position: relative;
+	min-height: 758px;
+	&Container{
+		background-color: $main;
+		color: $white;
+		position: absolute;
+		left: 50%;
+		transform: translateX(-50%);
+		top: 28px;
+		text-align: center;
+		padding: 0 !important;
+		max-width: 347px;
+		&Top{
+			text-align: start;
+			margin: 0 auto;
+			max-width: fit-content;
+			margin-bottom: 30px;
+		}
+		img{
+			width: 100%;
+			max-width: 270px;
+		}
+		p{
+			margin: 20px 0;
+			line-height: 140%;
+			&:last-of-type{
+				margin-bottom: 9px;
+			}
+		}
+	}
+}
+
+.tarifs{
+	min-height: 3253px;
+	background-image: url(../images/tarifsBg.png);
+	padding-top: 101px;
+	text-align: center;
+	color: $main;
+	margin-bottom: 70px;
+	h1 {
+		font-family: 'ABeeZee', sans-serif;
+	}
+	&Container{
+		&Heading{
+			padding-bottom: 10px;
+			border-bottom: 1px solid $main;
+			display: inline-block;
+			max-width: 270px;
+			width: 100%;
+			margin-top: 30px;
+			margin-bottom: 30px;
+		}
+		&Specific{
+			display: flex;
+			flex-direction: column;
+			text-align: start;
+			&Item{
+				width: 100%;
+				border: 1px solid $yellowRed;
+				padding: 30px 14px 7px 14px;
+				min-height: 470px;
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+				&Top{
+					h2{
+						text-align: center;
+						margin-bottom: 30px;
+					}
+					ul{
+						
+						li{
+							list-style: url(../images/tarifs/listOrange.svg);
+							margin-left: 13px;
+							margin-bottom: 20px;
+						}
+					}
+				}
+				h6{
+					text-align: center;
+					margin: 30px 0 13px 0;
+				}
+				&Bot{
+					display: flex;
+					justify-content: space-between;
+					align-items: center;
+					&Price{
+						width: 100%;
+						max-width: fit-content;
+						span{
+							background: #E03F57;
+							border-radius: 38px;
+							padding: 2px 12px;
+							color: $white;
+						}
+						h2{
+							font-weight: 400;
+							font-size: 40px;
+							margin: 7px 0 2px 0;
+						}
+						p{
+							color: $grey;
+							text-decoration: line-through;
+						}
+						
+					}
+					button{
+						height: 54px;
+						width: 162px;
+						line-height: 54px;
+						background-color: $white;
+					}
+				}
+				
+				.bottomValid{
+					color: $yellowRed;
+					max-width: fit-content;
+					margin: 19px auto 30px auto;
+				}
+				&:nth-of-type(2){
+					color: $white;
+					background-color: $main;
+					margin: 47px 0 28px 0;
+				}
+				&:nth-of-type(3){
+					padding-bottom: 30px;
+				}
+			}
+		
+			.tarifsContainerSpecificItemOrange{
+				background-color: $yellowRed;
+				color: $main !important;
+				button{
+					background-color: $main;
+					color: $yellowRed;
+				}
+				li{
+					list-style: url(../images/tarifs/listMain.svg);
+				}
+				p{color: $main !important;}
+			}
+			.tarifsContainerSpecificItemDefault{
+				color: $main !important;
+				background-color: transparent;
+			}
+		}
+	}
+}
+.blog{
+	color: $white ;
+	margin-bottom: 70px;
+	&Container{
+		&Top{
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			margin-bottom: 20px;
+			.line{
+				margin-top: 10px;
+			}
+			&SeeAll{
+				img{
+					margin-left: 17px;
+				}
+			}
+		}
+		&Slider{
+			display: flex;
+			width: 100%;
+			margin-bottom: 30px;
+			&Item{
+				max-width: 320px;
+				width: 100%;
+				color: $grey;
+				background-color: $white;
+				img{
+					width: 100%;
+					margin-bottom: 16px;
+				}
+				h6{
+					line-height: 140%;
+					color: #181127;
+					margin: 0 15px;
+					margin-bottom: 16px;
+				}
+				&Bot{
+					display: flex;
+					justify-content: space-between;
+					align-items: center;
+					margin: 0 15px;
+					margin-bottom: 10px;
+					&Author{
+						display: flex;
+						align-items: center;
+						img{
+							margin-right: 17px;
+							height: 32px;
+							width: 32px;
+							margin-bottom: 0 !important;
+						}
+					}
+				}
+			}
+		}
+		&Dots{
+			display: flex;
+			margin: 0 auto;
+			max-width: fit-content;
+			&Item{
+				height: 9px;
+				width: 9px;
+				border-radius: 50%;
+				background: $yellowRed;
+				margin-right: 23px;
+				transition: .3s;
+				&:last-of-type{
+					margin-right: 0 !important;
+				}
+			}
+			.--dotActive{
+				background-color: $white;
+				outline: 1px solid $white;
+				outline-offset: 7px;
+			}
+		}
+	}
+}
+
+.reviews{
+	margin-bottom: 70px;
+	width: 100%;
+	color: $white;
+	&Container{
+		&Top{
+			margin-bottom: 20px;
+			h1{
+				margin-bottom: 10px;
+			}
+		}
+		&Slider{
+			width: 100%;
+			display: flex;
+			margin-bottom: 40px;
+			&Item{
+				border: 1px solid $white;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				padding: 25px;
+			}
+		}
+		&Control{
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			width: 100%;
+			&Dots{
+				display: flex;
+				margin: 0 auto;
+				max-width: fit-content;
+				&Item{
+					height: 9px;
+					width: 9px;
+					border-radius: 50%;
+					background: $yellowRed;
+					margin-right: 23px;
+					transition: .3s;
+					&:last-of-type{
+						margin-right: 0 !important;
+					}
+				}
+				.--dotActive{
+					background-color: $white;
+					outline: 1px solid $white;
+					outline-offset: 7px;
+				}
+			}
+		}
+	}
+}
+
+.socialNetworks{
+	color: $white;
+	margin-bottom: 70px;
+	&Container{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+		.line{
+			margin-top: 10px;
+		}
+		img{
+			margin: 20px 0;
+			width: 100%;
+		}
+		&Inner{
+			display: flex;
+			flex-direction: column;
+			&Row{
+				display: flex;
+				flex-direction: column;
+				&Item{
+					margin-bottom: 14px;
+					img{
+						margin: 0 !important;
+					}
+				}
+			}
+		}
+		h2{
+			margin-bottom: 20px;
+		}
+	}
+}
+
+.faq{
+	width: 100%;
+	margin-bottom: 70px;
+	color: $white;
+	&Container{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		img{
+			width: 100%;
+			max-width: 320px;
+			margin: 0 auto;
+			margin-bottom: 40px;
+		}
+		&Inner{
+			width: 100%;
+			h1{
+				margin-bottom: 10px;
+			}
+			&Item{
+				padding: 20px 0;
+				display: flex;
+				justify-content: space-between;
+				width: 100%;
+				border-bottom: 1px solid $grey;
+				.--small{
+					display: none;
+					color: $yellowRed;
+					margin-top: 20px;
+				}
+				img{
+					width: 30px;
+					height: 30px;
+					margin: 0;
+				}
+				p{
+					max-width: 270px;
+					line-height: 140%;
+				}
+			}
+			.--acordionActive{
+				.--small{
+					display: inline-block !important;
+				}
+			}
+		}
+	}
+}
+.footer{
+	background-color: $white;
+	color: $main;
+
+	&Container{
+		padding-top: 30px;
+		&Top{
+			width: 100%;
+			display: flex;
+			flex-direction: column;
+			margin-bottom: 23px;
+			&Heading{
+				width: 100%;
+				padding-bottom: 20px;
+				border-bottom: 1px solid #EAEAEA;
+				text-align: center;
+				margin-bottom: 20px;
+			}
+			&Btns{
+				display: flex;
+				margin: 0 auto;
+				max-width: fit-content;
+				button{
+					height: 50px;
+					line-height: 50px;
+					width: 200px;
+					border: none;
+					&:last-of-type{
+						background-color: $white;
+						border: 1px solid $main;
+						width: 83px;
+						color: $main !important;
+						margin-left: 4px;
+					}
+				}
+				
+			}
+		}
+		&Mid{
+			display: flex;
+			flex-direction: column;
+			margin-bottom: 30px;
+			&Item{
+				h4{margin-bottom: 16px;}
+				&Contact{
+					display: flex;
+					align-items: center;
+					margin-bottom: 12px;
+					img{
+						margin-right: 8px;
+					}
+					a{
+						color: $yellowRed;
+					}
+				}
+				&Top{
+					display: flex;
+					img{
+						margin-right: 15px;
+						&:last-of-type{
+							margin: 0;
+						}
+					}
+				}
+				&Bot{
+					display: flex;
+					align-items: center;
+					justify-content: space-between;
+					margin-top: 20px;
+					li{
+						margin-bottom: 15px;
+						&:last-of-type{
+							margin-bottom: 0;
+						}
+					}
+					padding-right: 100px;
+				}
+			}
+		}
+		&Bot{
+			h6{
+				margin-bottom: 15px;
+			}
+			&Payment{
+				display: flex;
+				flex-wrap: wrap;
+				max-width: 271px;
+				img{margin-right: 19px; margin-bottom: 15px;}
+			}
+			&TechSupport{
+				display: flex;
+				margin: 27px 0 37px 0;
+				img{
+					margin-right: 8px;
+				}
+				p{
+					line-height: 140%;
+				}
+				span{
+					color: $yellowRed;
+				}
+
+			}
+			h5{
+				text-align: center;
+				margin-bottom: 50px;
+			}
+			h4{
+				color: $grey;
+				line-height: 140%;
+				font-weight: 300;
+				text-align: center;
 			}
 		}
 	}

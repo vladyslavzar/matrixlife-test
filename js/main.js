@@ -88,7 +88,7 @@ burgerMenuBtn.addEventListener('click', (e) => {
 })
 
 const tabBtns = document.querySelectorAll('.tab');
-const tabContentBlocks = document.querySelectorAll('.whoUsesCalccontainerTabsInner');
+const tabContentBlocks = document.querySelectorAll('.whoUsesCalcContainerTabsInner');
 
 const switchTab = (n) => {
   tabBtns.forEach((item, i) => {
