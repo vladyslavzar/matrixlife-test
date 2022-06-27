@@ -361,7 +361,7 @@ input{
 }
 @media screen and (min-width:480px){
 	.header{
-		min-height: 1170px;
+		min-height: 1170px !important;
 		background-image: url(../images/headerBgSmallMobile.png);
 		.altBtn{
 			display: inline-block !important;
@@ -426,6 +426,7 @@ input{
 		max-width: none !important;
 	}
 }
+@media screen and (min-width:500px){.header{min-height: 1500px !important;}}
 @media screen and (min-width:768px){
 	.showTablets{
 		display: block !important;
@@ -602,6 +603,334 @@ input{
 			z-index: 32;
 		}
 	}
+	.logo{
+		margin-bottom: 0 !important;
+	}
+}
+@media screen and (min-width:1000px){
+	.header{
+		background-image: url(../images/headerBgSmallDesktop.png);
+		background-position: 0 104px !important;
+		min-height: 1065px !important;
+		&Container{
+			background-color: transparent;
+			color: $white !important;
+			.logo{
+				background-image: url(../images/desktopHeaderLogo.png);
+			}
+			button{
+				&:first-of-type{
+					background: $yellowRed !important;
+					color: $main !important;
+				}
+				&:last-of-type{
+					background: transparent !important;
+					color: $white !important;
+					border: 1px solid $white;
+				}
+			}
+			.select-selected {
+				background-color: transparent !important;
+				color: $white !important;
+				padding: 17px 10px !important;
+				border: 1px solid $white;
+			}
+			.select-selected:after {
+				position: absolute;
+				content: "";
+				top: 22px;
+				right: 10px;
+				width: 11px;
+				height: 5px;
+				background-repeat: no-repeat;
+				background-position: center;
+				background-image: url(../images/selectWhite.svg);
+			}
+			.burgermenu{
+				background-image: url(../images/desktopMenu.png) !important;
+			}
+		}
+	}
+	.headerSecondContianer{
+		align-items: flex-start !important;
+		padding-top: 140px;
+		text-align: start !important;
+		p{
+			max-width: 666px;
+		}
+	}
+	.videoContainer{
+		text-align: start !important;
+		p{
+			line-height: 140%;
+			max-width: 470px;
+		}
+		img{
+			max-width: 470px;
+			width: 100%;
+			object-fit: contain;
+			margin-bottom: 0 !important;
+		}
+		&Top{
+			margin-left: 0 !important;
+			margin-right: 0 !important;
+		}
+		.desktopFlex{
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+	}
+	.fateNumbersContainerInner{
+		height: 686px;
+		padding-top: 75px;
+		max-width: 952px !important;
+		
+	}
+	.fateNumbers{
+		margin-bottom: 460px !important;
+	}
+	.fateNumbersContainerInnerRow {
+		display: none !important;
+	}
+    .fateNumbersContainerInnerCol{
+		display: flex !important;
+		img{
+			max-width: 280px;
+		}
+		&:last-of-type{
+			max-width: 479px;
+				width: 100%;
+			.fateNumbersContainerInnerColItem{
+				margin-top: 40px;
+				margin-bottom: 0px;
+				max-width: 479px;
+				width: 100%;
+			}
+		}
+		&Item{
+			margin-bottom: 40px;
+			p{
+				margin-top: 20px;
+			}
+		}
+	}
+	.colContainer{
+		display: flex !important;
+		justify-content: space-between;
+		width: 100%;
+	}
+	.mainThing{
+		max-width: 804px;
+		
+	}
+	.mainThingBot{
+		max-width: 923px !important;
+		margin-right: 20px !important;
+		p{
+			margin-bottom: 0 !important;
+		}
+		&Container{
+			display: flex !important; 
+			align-items: center;
+			
+		}
+	}
+	.tarotCards{
+		text-align: start !important;
+		&Container{
+			align-items: flex-start !important;
+			p{text-align: start !important; line-height: 27px !important; margin-bottom: 0px !important;}
+			img{
+				margin: 0 !important;
+			}
+			&Adaptiv{
+				display: flex;
+			}
+		}
+	}
+	.whyYouNeedMatrix{
+		background-size: 100% 85% !important;
+		min-height: 1100px !important;
+	}
+	.socialNetworksContainer {
+		img{
+			max-width: 757px;
+		}
+	}
+	.mainThingBotContainer{
+		position: relative;
+		img{
+			transform: translate(-50%, -50%);
+			top: 0;
+			left: 3%;
+			position: absolute;
+			display: block !important;
+			width: 140px;
+			height: 258px;
+			z-index: 32;
+		}
+	}
+	.whyYouNeedMatrixContainerInner{
+		
+		min-height: 660px;
+		align-items: center;
+		justify-content: center;
+		&Left{
+			width: 0px !important;
+			min-width: 0px !important;
+		}
+		position: relative;
+		.whyYouNeedMatrixContainerInnerLeftItem{
+			position: absolute;
+			top: 0;
+			left: 0;
+			max-width: 308px !important;
+			text-align: center !important;
+			justify-content: center;
+			&:nth-of-type(1){
+				top: 0;
+				left: 50%;
+				transform: translateX(-50%);
+			}
+			&:nth-of-type(2){
+				top: 100px;
+				left: 92px;
+			}
+			&:nth-of-type(3){
+				top: 240px;
+				left: 15px;
+			}
+			&:nth-of-type(4){
+				top: 440px;
+				left: 23px;
+			}
+			&:nth-of-type(5){
+				top: 540px;
+				left: 50%;
+				transform: translateX(- 50%);
+			}
+			&:nth-of-type(6){
+				top: 100px;
+				left: 580px;
+			}
+			&:nth-of-type(7){
+				top: 271px;
+				left: 651px;
+			}
+			&:nth-of-type(8){
+				top: 440px;
+				left : 640px;
+			}
+		}
+	}
+	.workContainer{
+		text-align: start !important;
+		&Desktop{
+			display: flex;
+			text-align: start !important;
+			justify-content: space-between;
+			align-items: center;
+			&Left{
+				width: 100%;
+				display: flex;
+				flex-wrap: wrap;
+				align-items: center;
+				img{
+					max-width: 656px !important;
+				}
+			}
+			p{
+				text-align: start !important;
+				width: 100%;
+				max-width: none;
+				line-height: 28px;
+			}
+			img{
+				max-width: 693px;
+				width: 100%;
+				max-height: 433px;
+			}
+		}
+	}
+	.recomendations{
+		max-width: 564px;
+		p{
+			font-weight: 400;
+			font-size: 20px !important;
+			line-height: 140% !important;
+		}
+	}
+	.weOfferContainer{
+		.showTablets{
+			display: none !important;
+		}
+		.weOfferContainerGrid{
+			grid-template-columns: repeat(3,auto [col-start])!important;
+			grid-template-rows: repeat(3 ,auto [row-start])!important;
+			button{
+				display: inline-block;
+				margin-top: 50px;
+			}
+		}
+	}
+	.desiredJob{min-height: 450px !important;}
+	.desiredJobContainer {
+		max-width: 960px !important;
+		width: 100% !important;
+		top: 130px!important;
+		padding-bottom: 28px !important;
+		p{
+			text-align: start !important;
+		}
+		img{
+			display: none;
+		}
+		.desiredJobContainerFlex{
+			display: flex;
+			.desiredJobContainerDesktop{
+				display: block !important;
+			}
+		}
+	}
+	.reviewsContainerControl{
+		max-width: 465px;
+		margin: 0 auto;
+	}
+	.socialNetworksContainer{
+		h2{
+			text-align: start !important;
+		}
+	}
+	.socialNetworksContainerInnerRow{
+		flex-direction: row !important;
+		&Item{
+			margin-right: 20px;
+			img{
+				width: 100%;
+			}
+			&:last-of-type{
+				margin-right: 0 !important;
+			}
+		}
+	}
+	.faq{
+		max-width: 700px;
+	}
+	.footer{
+		margin-bottom: 0 !important;
+		&Container{
+			max-width: 936px !important;
+		}
+	}
+}
+.colContainer{
+	display: none;
+}
+
+.fateNumbersContainerInnerCol{
+	display: none;
+	flex-direction: column;
 }
 
 .--activeMenu{
@@ -1063,7 +1392,7 @@ input{
 		transform: translateX(-50%);
 		top: 28px;
 		text-align: center;
-		padding: 0 !important;
+		padding: 0 ;
 		max-width: 347px;
 		&Top{
 			text-align: start;
