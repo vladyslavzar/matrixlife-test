@@ -122,6 +122,21 @@ input{
 		font-size: 16px;
 		line-height: 19px;
 	}
+
+}
+@media screen and (min-width:500px){
+	.whyYouNeedMatrix{
+		min-height: 1200px !important;
+		background-size: 100% 99% !important;
+	}
+	.header{
+		background-position: 0px 100px !important;
+	}
+}
+@media screen and (min-width:600px){
+	.header{
+		background-position: top !important;
+	}
 }
 @media screen and (max-width: 380px) {
 	h2{
@@ -409,6 +424,183 @@ input{
 	}
 	.footerContainerBotPayment{
 		max-width: none !important;
+	}
+}
+@media screen and (min-width:768px){
+	.showTablets{
+		display: block !important;
+	}
+	.whyYouNeedMatrix{
+		background-size: 100% 90% !important;
+		margin-bottom: 0px !important;
+		max-height: none !important;
+		min-height: 1522px!important;
+	}
+	.header{
+		min-height: 1400px;
+		background-image: url(../images/headerBgMobile.png);
+		&Container{
+			flex-direction: row !important;
+			align-items: center;
+			justify-content: space-between;
+			nav{
+				max-width: 460px !important;
+			}
+		}
+		
+	}
+	.headerSecondContianer{
+		display: flex;
+		flex-direction: column !important;
+		align-items: center !important;
+		p{
+			max-width: none;
+		}
+	}
+	.fateNumbersContainerInner{
+		max-width: 721px !important;
+		h2{
+			font-size: 40px;
+			line-height: 47px;
+		}
+	}
+	.fateNumbersContainerInnerRowItem:last-of-type {
+		max-width: 315px;
+	}
+	.fateNumbersContainerInnerTop{
+		max-width: fit-content !important;
+	}
+	.mainThingContainer{
+		text-align: start !important;
+		h1{
+			text-align: start !important;
+		}
+		.line{
+			text-align: start !important;
+		}
+		p{
+			text-align: start !important;
+			font-size: 20px !important;
+			line-height: 140% !important;
+		}
+		.mainThingContainerTop{
+			align-items: flex-start;
+		}
+	}
+	.mainThingBot{
+		max-width: 690px;
+		margin: 0 auto;
+		margin-top: 134px;
+	}
+	.whoUsesCalcContainerTop{
+		align-items: flex-start !important;
+	}
+	.whoUsesCalcContainerTabs{
+		max-width: 598px !important;
+	}
+	.whyYouNeedMatrixContainerInnerLeft{
+		max-width: 322px;
+		
+		&Item{
+			max-width: none !important;
+			margin-bottom: 60px !important;
+			p{
+				max-width: none !important;
+				font-size: 24px;
+				line-height: 28px;
+			}
+		}
+	}
+
+	.whyYouNeedMatrix{
+		min-height: 1522px !important;
+		padding-top: 100px !important;
+		img{
+			width: 100%;
+			max-height: 408px !important;
+			max-width: none !important;
+			object-fit: contain;
+		}
+	}
+	.recomendationsContainer {
+		text-align: start !important;
+		.recomendationsContainerTop{
+			align-items: flex-start;
+		}
+	}
+	.weOfferContainerGrid{
+		grid-template-columns: repeat(2, auto [col-start]) !important;
+		grid-template-rows: repeat(4, auto [row-start]) !important;
+		margin-bottom: 27px;
+		button{
+			display: none;
+		}
+		justify-content: space-evenly;
+		&Item{
+			max-width: 236px;
+			width: 100%;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			img{
+				width: 52px;
+			}
+		}
+	}
+	
+	.desiredJobContainer {
+		max-width: 730px !important;
+	}
+
+	.--huge{
+		font-size: 24px !important;
+	}
+	.tarifsContainerSpecific{
+		align-items: center;
+	}
+	.tarifsContainerSpecificItem{
+		max-width: 360px;
+	}
+	.tarifs{
+		background-size: 100% 99% !important;
+	}
+	.blog{
+		margin-bottom: 100px !important;
+	}
+	.faqContainerInnerItemMain{
+		max-width: fit-content;
+		width: 100%;
+		p{
+			max-width: 510px !important;
+		}
+	}
+	.footer{
+		display: flex;
+		justify-content: flex-end;
+		background-color: transparent !important;
+		margin-bottom: 86px;
+		margin-top: 133px;
+	}
+	
+	.footerContainer {
+		max-width: 704px !important;
+		background-color: $white;
+		margin: 0 !important;
+		position: relative;
+		padding-left: 113px;
+		overflow: visible;
+		
+		.decor{
+			transform: translate(-50%, -50%);
+			top: 0;
+			left: 0;
+			position: absolute;
+			display: block !important;
+			width: 140px;
+			height: 258px;
+			z-index: 32;
+		}
 	}
 }
 
@@ -1234,6 +1426,7 @@ input{
 
 	&Container{
 		padding-top: 30px;
+		position: relative;
 		&Top{
 			width: 100%;
 			display: flex;
