@@ -347,6 +347,13 @@ input{
 		}
 	}
 }
+.socialNetworksContainerInnerRow{
+	justify-content: center;
+	align-items: center;
+}
+.socialNetworksContainerInnerRowItem{
+	max-width: 186px;
+}
 @media screen and (min-width:380px){
 	.header{
 		min-height: 1300px;
@@ -373,6 +380,9 @@ input{
 	}
 	.fateNumbersContainerInnerTop{
 		max-width: 318px !important;
+	}
+	.socialNetworksContainerInner{
+		justify-content: center !important;
 	}
 	.fateNumbersContainerInnerRow{
 		&Item{
@@ -427,7 +437,32 @@ input{
 	}
 }
 @media screen and (min-width:500px){.header{min-height: 1500px !important;}}
+@media screen and (min-width: 688px) {
+	.header{
+		min-height: 1705px !important;
+	}
+}
 @media screen and (min-width:768px){
+	.mainThingBotContainer{
+		position: relative !important;
+		img{
+			transform: translate(-50%, -50%);
+			top: 0;
+			left: 6%;
+			position: absolute;
+			display: block !important;
+			width: 140px;
+			height: 258px;
+			z-index: 32;
+			&:last-of-type{
+				bottom: -129px;
+				right: 3%;
+				left: auto !important;
+				top: auto !important;
+				transform: translate(50%, -50%);
+			}
+		}
+	}
 	.showTablets{
 		display: block !important;
 	}
@@ -483,6 +518,7 @@ input{
 			text-align: start !important;
 			font-size: 20px !important;
 			line-height: 140% !important;
+			
 		}
 		.mainThingContainerTop{
 			align-items: flex-start;
@@ -492,6 +528,10 @@ input{
 		max-width: 690px;
 		margin: 0 auto;
 		margin-top: 134px;
+		p{
+			max-width: 525px;
+			margin: 0 auto;
+		}
 	}
 	.whoUsesCalcContainerTop{
 		align-items: flex-start !important;
@@ -602,10 +642,15 @@ input{
 			height: 258px;
 			z-index: 32;
 		}
+		
 	}
 	.logo{
 		margin-bottom: 0 !important;
 	}
+	#decorB{
+		display: none !important;
+	}
+	
 }
 @media screen and (min-width:1000px){
 	.header{
@@ -659,6 +704,7 @@ input{
 			max-width: 666px;
 		}
 	}
+	
 	.videoContainer{
 		text-align: start !important;
 		p{
@@ -758,19 +804,7 @@ input{
 			max-width: 757px;
 		}
 	}
-	.mainThingBotContainer{
-		position: relative;
-		img{
-			transform: translate(-50%, -50%);
-			top: 0;
-			left: 3%;
-			position: absolute;
-			display: block !important;
-			width: 140px;
-			height: 258px;
-			z-index: 32;
-		}
-	}
+
 	.whyYouNeedMatrixContainerInner{
 		
 		min-height: 660px;
@@ -924,6 +958,282 @@ input{
 		}
 	}
 }
+@media screen and (min-width: 1105px){
+	.header{
+		min-height: 1350px !important;
+	}
+	.whyYouNeedMatrixContainerInner .whyYouNeedMatrixContainerInnerLeftItem:nth-of-type(6) {left: 723px !important;}
+	.whyYouNeedMatrixContainerInner .whyYouNeedMatrixContainerInnerLeftItem:nth-of-type(7) {left: 773px !important;}
+	.whyYouNeedMatrixContainerInner .whyYouNeedMatrixContainerInnerLeftItem:nth-of-type(8) {left: 770px !important;}
+
+}
+
+
+@media screen and (min-width:1440px) {
+	.workContainer{
+		background-image: url(../images/workContainerBg.png);
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: center right;
+	}
+	.recomendations{
+		background-image: url(../images/workContainerBotBg.png);
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: center right;
+	}
+	.faq{
+		&Container{
+			background-image: url(../images/faqDecor.png);
+			background-size: contain;
+			background-repeat: no-repeat;
+			background-position: center left;
+		}
+	}
+	.header{
+		background-image: url(../images/headerBgBigDesktop.png);
+		min-height: 1171px !important;
+		&Container{
+			nav{
+				max-width: none !important;
+			}
+		}
+		.logo{
+			margin-right: 28px;
+		}
+		.btn{
+			width: 200px !important;
+		}
+	}
+	#decorB{
+		display: block !important;
+	}
+	.menu{
+		position: static !important;
+		width: auto !important;
+		height: auto !important;
+		flex-direction: row !important;
+		transform: none !important;
+		padding: 0px !important;
+		max-width: 650px !important;
+		width: 100% !important;
+		justify-content: space-between;
+		align-items: center;
+		margin-right: 30px;
+		li{
+			margin: 0 !important;
+		}
+	}
+	
+	.burgermenu{
+		display: none !important;
+	}
+	.desktopFlex{
+		p{
+			line-height: 140%;
+			max-width: 555px;
+		}
+		img{
+			max-width: 600px;
+			width: 100%;
+		}
+	}
+	.fateNumbers{
+		min-height: 482px !important;
+		max-width: 1186px;
+		margin: 0 auto;
+		margin-bottom: 570px !important;
+		&Container{
+			&Inner{
+				min-height: 895px !important;
+				max-width: 1216px !important;
+				padding: 83px 102px 12px 102px !important;
+				img{
+					width: 100%;
+					min-height: 266px;
+					object-fit: cover;
+					max-width: none !important;
+				}
+				&Col{
+					max-width: 450px !important;
+					width: 100% !important;
+				}
+			}
+		}
+	}
+	.mainThing{
+		max-width: none!important;
+		
+	}
+	.mainThingBot{
+		max-width: 1216px !important;
+		margin-right: auto !important;
+		text-align: center !important;
+		padding-right: 170px !important;
+		&Container{justify-content: center;}
+		p{
+			max-width: 525px;
+			margin-right: 52px;
+		}
+		button{
+			display: inline-block;
+			text-align: center !important;
+		}
+	}
+	.whoUsesCalcContainer{
+		align-items: flex-start !important;
+		p{
+			text-align: start !important;
+			max-width: 954px;
+			line-height: 140%;
+			margin: 30px 0 50px 0 !important;
+			font-size: 24px;
+		}
+		&Tabs{
+			margin-bottom: 170px !important;
+		}
+	}
+
+	.tarotCardsContainerAdaptiv{
+		justify-content: space-between;
+		width: 100%;
+		p{max-width: 468px;}
+		img{
+			display: block;
+			max-width: 597px;
+		}
+	}
+	.tarotCardsContainer{
+		button{
+			transform: translateY(-170px);
+		}
+	}
+	.workContainerDesktopLeft{
+		img{
+			display: none !important;
+		}
+	}
+	.workContainerDesktopShow{
+		display: block !important;
+	}
+	.workContainerTop{
+		text-align: start !important;
+	}
+	.workContainerDesktop{
+		p{
+			font-size: 20px;
+			line-height: 140%;
+			margin-bottom: 30px;
+		}
+	}
+	.recomendations{
+		margin-left: auto !important;
+		margin-right: auto !important;
+		max-width: 1243px !important;
+		width: 100%;
+		&Container{
+			max-width: 600px;
+			margin: 0;
+		}
+	}
+	.desiredJobContainerTop{
+		margin: 0 !important;
+
+		.line{
+			margin-top: 10px;
+		}
+	}
+	.desiredJob{
+		margin-bottom: 100px;
+	}
+	.desiredJobContainer {
+		padding: 28px 52px !important;
+		max-width: 1257px !important;
+		top: 70px !important;
+		&Flex{
+			justify-content: space-between;
+			img{
+				max-height: 433px;
+				max-width: 433px !important;
+			}
+		}
+		p{
+			max-width: 581px;
+		}
+	}
+	.tarifsContainerSpecific{
+		flex-direction: row !important;
+		justify-content: space-between !important;
+		&:last-of-type{
+			justify-content: center !important;
+			.tarifsContainerSpecificItem{
+				&:first-of-type{
+					margin-right: 37px;
+				}
+			}
+		}
+	}
+	.tarifs{
+		min-height: 1800px !important;
+	}
+	.socialNetworksContainerFlex{
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		width: 100%;
+		margin-top: 60px;
+		img{
+			max-width: 757px !important;
+		}
+		&Item{
+			max-width: 392px;
+			
+		}
+	}
+	.socialNetworksContainerInner{
+		&Row{
+			flex-direction: column !important;
+			&Item:first-of-type{margin-right: 0px !important;}
+		}
+	}
+	.faq{
+		max-width: none !important;
+	}
+	.faqContainer{
+		flex-direction: row !important;
+	}
+	.footer{
+		width: 100% !important;
+		margin-right: 0px !important;
+		&Container{
+			max-width: 1326px !important;
+			width: 100% !important;
+		}
+	}
+	.footerContainerMidItemBot {
+		ul{
+			margin-right: 124px !important;
+			&:last-of-type{
+				margin-right: 0px;
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 1520px) {
+	.header{
+		min-height: 1350px !important;
+	}
+}
+
+
+
+@media screen and (min-width: 1820px) {
+	.header{
+		background-size: 100% 77%;
+	}
+}
+
 .colContainer{
 	display: none;
 }
@@ -1384,6 +1694,7 @@ input{
 	width: 100%;
 	position: relative;
 	min-height: 758px;
+	
 	&Container{
 		background-color: $main;
 		color: $white;

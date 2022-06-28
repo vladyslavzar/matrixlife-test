@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header class="header">
+  <header class="header" id="desktopAdapt">
     <div class="headerContainer container">
       <div class="logo"></div>
       <nav>
@@ -23,7 +23,6 @@
           <li><a href="#">Blog</a></li>
           <li><a href="#">Reviews</a></li>
           <li><a href="#">FAQ</a></li>
-          
         </ul>
         <button class="btn">Calculate matrix</button>
         <button class="altBtn">Log in</button>
@@ -115,7 +114,7 @@
               <p class="--big">Registered users</p>
             </div>
             <div class="fateNumbersContainerInnerColItem">
-              <h2 class="--boldest">>50 countries <br>of the world</h2>
+              <h2 class="--boldest">>50 countries of the world</h2>
               <p class="--big">Geography of users</p>
             </div>
           </div>
@@ -140,6 +139,7 @@
   <section class="mainThingBot">
     <div class="mainThingBotContainer container">
       <img style="display: none;" src="images/findWayDecor.png" alt="" class="decor">
+      <img style="display: none; position: absolute !important; right: -13% !important;" src="images/findWayDecor2.png" alt="" class="decor " id="decorB">
       <p class="--huge">We do know that everyone is a unique person. Discover your way with the numerology method of the “Matrix of Destiny”.</p>
       <button class="btn">Find out your way</button>
     </div>
@@ -558,18 +558,24 @@
         <h1>We are in social networks</h1>
         <div class="line"></div>
       </div>
-      <img src="images/socialNetworks/main.png" alt="">
-      <h2>Subscribe to our social networks:</h2>
-      <div class="socialNetworksContainerInner">
-        <div class="socialNetworksContainerInnerRow">
-          <div class="socialNetworksContainerInnerRowItem"><img src="images/socialNetworks/youtube.jpg" alt=""></div>
-          <div class="socialNetworksContainerInnerRowItem"><img src="images/socialNetworks/telegramm.jpg" alt=""></div>
-        </div>
-        <div class="socialNetworksContainerInnerRow">
-          <div class="socialNetworksContainerInnerRowItem"><img src="images/socialNetworks/vk.jpg" alt=""></div>
-          <div class="socialNetworksContainerInnerRowItem"><img src="images/socialNetworks/instagramm.jpg" alt=""></div>
+      
+      <div class="socialNetworksContainerFlex">
+        <img src="images/socialNetworks/main.png" alt="">
+        <div class="socialNetworksContainerFlexItem">
+          <h2>Subscribe to our social networks:</h2>
+          <div class="socialNetworksContainerInner">
+            <div class="socialNetworksContainerInnerRow">
+              <div class="socialNetworksContainerInnerRowItem"><img src="images/socialNetworks/youtube.jpg" alt=""></div>
+              <div class="socialNetworksContainerInnerRowItem"><img src="images/socialNetworks/telegramm.jpg" alt=""></div>
+            </div>
+            <div class="socialNetworksContainerInnerRow">
+              <div class="socialNetworksContainerInnerRowItem"><img src="images/socialNetworks/vk.jpg" alt=""></div>
+              <div class="socialNetworksContainerInnerRowItem"><img src="images/socialNetworks/instagramm.jpg" alt=""></div>
+            </div>
+          </div>
         </div>
       </div>
+      
     </div>
   </section>
   <section class="faq">
