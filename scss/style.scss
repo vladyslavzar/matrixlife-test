@@ -216,12 +216,14 @@ input{
 
 .header{
 	min-height: 1145px;
+	margin: 0 auto;
 	margin-bottom: 50px;
 	background-image: url(../images/headerBgMiniMobile.png);
 	background-position: top;
 	background-size: 100%;
 	background-repeat: no-repeat;
 	color: $main;
+	max-width: 2000px;
 	&Container{
 		display: flex;
 		flex-direction: column;
@@ -367,6 +369,21 @@ input{
 	}
 }
 @media screen and (min-width:480px){
+	.whoUsesCalcContainerTabsTop{
+		display: none !important;
+	}
+	.whoUsesCalcContainerTabs{
+		background-color: transparent !important;
+	}
+	.whoUsesCalcContainerTabsInner{
+		padding-top: 20px !important;
+		display: block !important;
+		margin-bottom: 30px !important;
+		background-color: $white !important;
+		h5{
+			display: block !important;
+		}
+	}
 	.header{
 		min-height: 1170px !important;
 		background-image: url(../images/headerBgSmallMobile.png);
@@ -970,6 +987,8 @@ input{
 
 
 @media screen and (min-width:1440px) {
+	
+	
 	.workContainer{
 		background-image: url(../images/workContainerBg.png);
 		background-size: contain;
@@ -1063,6 +1082,11 @@ input{
 	}
 	.mainThing{
 		max-width: none!important;
+		&Container{
+			.--medium{
+				max-width: 805px;
+			}
+		}
 		
 	}
 	.mainThingBot{
@@ -1218,6 +1242,25 @@ input{
 			}
 		}
 	}
+	.whoUsesCalcContainerTabs{
+		display: flex !important;
+		flex-direction: row-reverse !important;
+		max-width: none !important;
+		justify-content: space-between;
+		&Inner{
+			height: fit-content !important;
+			max-width: 598px !important;
+			margin-top: 15px !important;
+			&:first-of-type{
+				
+			}
+			&:last-of-type{
+				margin-top: 0px !important;
+				max-width: 763px !important;
+				margin-right: 20px !important;
+			}
+		}
+	}
 }
 
 @media screen and (min-width: 1520px) {
@@ -1231,6 +1274,11 @@ input{
 @media screen and (min-width: 1820px) {
 	.header{
 		background-size: 100% 77%;
+	}
+}
+@media screen and (min-width: 2500px) {
+	.footer{
+		max-width: 75vw;
 	}
 }
 

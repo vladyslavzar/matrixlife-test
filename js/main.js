@@ -87,25 +87,36 @@ burgerMenuBtn.addEventListener('click', (e) => {
     });
 })
 
-const tabBtns = document.querySelectorAll('.tab');
-const tabContentBlocks = document.querySelectorAll('.whoUsesCalcContainerTabsInner');
-
-const switchTab = (n) => {
-  tabBtns.forEach((item, i) => {
-    item.classList.add('--tabActive');
-    tabContentBlocks[i].classList.add('--tabContentActive');
-
-    if (i === n) return;
-
-    item.classList.remove('--tabActive');
-    tabContentBlocks[i].classList.remove('--tabContentActive');
-  })
+function tabs() {
+  if (window.screen.width < 480){
+    const tabBtns = document.querySelectorAll('.tab');
+    const tabContentBlocks = document.querySelectorAll('.whoUsesCalcContainerTabsInner');
+    
+    const switchTab = (n) => {
+      tabBtns.forEach((item, i) => {
+        item.classList.add('--tabActive');
+        tabContentBlocks[i].classList.add('--tabContentActive');
+    
+        if (i === n) return;
+    
+        item.classList.remove('--tabActive');
+        tabContentBlocks[i].classList.remove('--tabContentActive');
+      })
+    }
+    
+    switchTab(0);
+    
+    tabBtns.forEach((item, i) => {
+      item.addEventListener('click', (e) => {
+        switchTab(i);
+      })
+    })
+  }
+  
 }
 
-switchTab(0);
+tabs();
 
-tabBtns.forEach((item, i) => {
-  item.addEventListener('click', (e) => {
-    switchTab(i);
-  })
-})
+window.addEventListener('resize', tabs);
+
+
