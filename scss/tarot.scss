@@ -1,0 +1,1154 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee&display=swap');
+
+$yellowRed: #F2A873;
+$orange: #FB9146;
+$grey: #979797;
+$white: #FFFFFF;
+$main: #1B3840;
+$pink: #F3C4A9;
+$black: #000;
+
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	overflow-y: auto;
+    overflow-x: hidden;
+	font-family: 'ABeeZee', sans-serif;
+    font-family: 'Roboto', sans-serif;
+	background-color: $white;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+/*--------------------*/
+
+
+h1{
+	font-weight: 500;
+	font-size: 36px;
+	line-height: 45px;
+}
+h2{
+	font-weight: 400;
+	font-size: 34px;
+	line-height: 38px;
+}
+.--massive{
+	font-style: normal;
+	font-weight: 400;
+	font-size: 24px;
+	line-height: 28px;
+}
+
+.--big{
+	font-style: normal;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 23px;
+}
+.--huge{
+	font-style: normal;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 23px;
+}
+
+.--medium{
+	font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 23px;
+}
+
+.--small{
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 23px;	
+}
+.--bold{
+	font-weight: 500;
+}
+.--bolder{
+	font-weight: 600;
+}
+.--boldest{
+	font-weight: 700;
+}
+input{
+	border: 1px solid $main;
+	height: 54px;
+	line-height: 54px;
+	padding: 0px 8px;
+	color: rgba(27, 56, 64, 0.5);
+	background-color: transparent;
+}
+
+@media screen and (max-width: 500px) {
+	h1{
+		font-size: 24px !important;
+		line-height: 140% !important;
+	}
+	.--big{
+		font-size: 16px;
+		line-height: 19px;
+	}
+
+}
+@media screen and (min-width:500px){
+	.whyYouNeedMatrix{
+		min-height: 1200px !important;
+		background-size: 100% 99% !important;
+	}
+	.header{
+		background-position: 0px 100px !important;
+	}
+}
+@media screen and (min-width:600px){
+	.header{
+		background-position: top !important;
+	}
+}
+@media screen and (max-width: 380px) {
+	h2{
+		font-size: 24px;
+	}
+}
+@media screen and (max-width: 370px) {
+	.header{
+		background-position: 0 100px !important;
+	}
+	.tab{
+		white-space: nowrap;
+	}
+	.desiredJob{
+		margin-bottom: 100px;
+	}
+}
+.btn{
+	max-width: 243px;
+	height: 78px;
+	width: 100%;
+	background: $main;
+	color: $white;
+	line-height: 78px;
+	transition: .3s;
+	font-size: 20px;
+	&:hover{
+		background: $white;
+		color: $main;
+	}
+	&:active{
+		background: $orange;
+		color: $white;
+	}
+	&:disabled{
+		background: $pink;
+		color: $white;
+	}
+}
+.altBtn{
+	max-width: 243px;
+	height: 78px;
+	font-size: 20px;
+	width: 100%;
+	background: $yellowRed;
+	color: $main;
+	line-height: 78px;
+	transition: .3s;
+	border: 1px solid $main;
+	&:hover{
+		background: $yellowRed;
+		color: $main;
+		border-color: transparent;
+	}
+	&:active{
+		color: $main;
+		border-color: $yellowRed;
+	}
+	&:disabled{
+		color: $main;
+		border-color: $pink;
+	}
+}
+
+.line{
+	width: 44px;
+	height: 3px;
+	background-color: #F2A873;
+}
+
+.container {
+	max-width: 1243px;
+	padding: 0 14px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.header{
+	margin: 0 auto;
+	margin-bottom: 50px;
+	background-position: top;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	color: $main;
+	max-width: 2000px;
+	&Container{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding-top: 40px;
+		margin-bottom: 22px;
+		.logo{
+			width: 144px;
+			height: 34px;
+			background-image: url(../images/DarkLogo.png);
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: contain;
+			margin-bottom: 20px;
+		}
+		nav{
+			max-width: 1043px;
+			width: 100%;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			ul{
+				display: flex;
+				flex-direction: column;
+				position: fixed;
+				background-color: #1b38408e;
+				width: 100vw;
+				height: 100vh;
+				top: 0;
+				left: 0;
+				padding: 30px;
+				align-items: center;
+				transform: translateY(-200%);
+				transition: .3s;
+				padding-top: 200px;
+				z-index: 4;
+				
+				li{
+					margin: 0 0 20px 0;
+					a {
+						color: $white;
+					}
+				}
+			}
+			button{
+				border-radius: 0 !important;
+				&:first-of-type{
+					width: 291px;
+					height: 50px;
+					line-height: 50px;
+				}
+				&:nth-of-type(2){
+					width: 83px;
+					height: 50px;
+					line-height: 50px;
+					display: none;
+				}
+			}
+			.altBtn{
+				&:first-of-type{
+					border: none !important;
+				}
+			}
+			.custom-select{display: none;}
+			.burgermenu{
+				width: 34px;
+				height: 23px;
+				background-repeat: no-repeat;
+				background-position: center;
+				background-image: url(../images/menu.svg);
+				background-size: contain;
+				z-index: 10;
+				position: relative;
+				transition: .3s;
+				cursor: pointer;
+			}
+		}
+	}
+
+}
+
+.navigation{
+	&Container{
+		a{
+			display: inline;
+			color: $main !important;
+			&:last-of-type{
+				color: #CDCDCD !important;
+				margin-left: 10px;
+			}
+		}
+	}
+}
+.learning{
+	width: 100%;
+	margin-top: 40px;
+	margin-bottom: 80px;
+	&Container{
+		text-align: center;
+		p{
+			margin: 20px 0;
+		}
+		button{
+			height: 60px;
+			width: 100%;
+			margin-bottom: 10px;
+			line-height: 60px !important;
+			max-width: none !important;
+			&:last-of-type{
+				margin: 0 !important;
+				background-color: transparent;
+			}
+		}
+		img{
+			width: 100%;
+			margin-top: 30px;
+		}
+	}
+}
+.videoCourse{
+	width: 100%;
+	&Container{
+		color: $main;
+		&Top{
+			max-width: fit-content;
+			margin: 0 auto;
+			margin-bottom: 20px;
+			h1{
+				margin-bottom: 10px;
+			}
+		}
+		&Flex{
+			margin-bottom: 40px;
+			display: flex;
+			flex-direction: column;
+			img{
+				margin: 0 auto;
+				margin-bottom: 20px;
+			}
+			p{
+				line-height: 140%;
+			}
+		}
+	}
+}
+
+.tarotSeeAll{
+	width: 100%;
+	color: $main;
+	margin-bottom: 40px;
+	&Container{
+		position: relative;
+		&Top{
+			max-width: fit-content;
+			margin: 0 auto;
+			margin-bottom: 20px;
+			h1{
+				margin-bottom: 10px;
+			}
+		}
+		&Image{
+			width: 347px;
+			height: 329px;
+			background-image: url(../images/tarotSeelAll375px.png);
+			background-position: center;
+			background-size: contain;
+			margin: 0 auto;
+		}
+		.btn{
+			max-width: none !important;
+		}
+		&SeeAll{
+			a{
+				display: flex;
+				align-items: center;
+				span{margin-right: 10px;}
+			}
+			transform: translateY(30%);
+			position: absolute;
+			top: 0;
+			right: 0;
+		}
+	}
+}
+
+.divination{
+	width: 100%;
+	color: $main;
+	&Container{
+		&Top{
+			max-width: fit-content;
+			margin: 0 auto;
+			margin-bottom: 40px;
+			h1{
+				margin-bottom: 10px;
+			}
+		}
+		&Inner{
+			display: flex;
+			flex-direction: column;
+			img{
+				width: 100%;
+				max-width: 355px;
+				margin: 0 auto;
+				margin-bottom: 30px;
+				display: block;
+			}
+			&Item{
+				margin-bottom: 40px;
+				button{
+					max-width: none;
+					margin-top: 30px;
+				}
+			}
+		}
+	}
+}
+
+
+.aboutMatrix{
+	margin-bottom: 60px;
+	&Container{
+		color: $main;
+		&Top{
+			max-width: fit-content;
+			margin: 0 auto;
+			margin-bottom: 54px;			
+			h1{margin-bottom: 10px;}
+		}
+		&Main{
+			display: flex;
+			flex-direction: column;
+			width: 100%;
+			&Inner{
+				display: grid;
+				grid-template-columns: repeat(2, 142px [col-start]);
+				grid-template-rows: repeat(2, 70px [row-start]);
+				column-gap: 39px;
+				row-gap: 47px;
+				margin-bottom: 40px;
+				padding-left: 24px;
+				max-width: 500px;
+				&Item{
+					width: 100%;
+					height: 70px;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					background-color: $pink;
+					position: relative;
+					padding: 0 5px;
+					text-align: center;
+					&::before{
+						position: absolute;
+						content: '';
+						top: -20px;
+						left: -20px;
+						font-weight: 500;
+						font-size: 34px;
+						text-transform: uppercase;
+						color: #1B3840;
+					}
+					&:nth-of-type(1)::before{
+						content: '1 048 259';
+					}
+					&:nth-of-type(2)::before{
+						content: '19 526';
+					}
+					&:nth-of-type(3)::before{
+						content: '85 265';
+					}
+					&:nth-of-type(4)::before{
+						content: '>50 ';
+					}
+				}
+			}
+			img{
+				width: 100%;
+			}
+		}
+	}
+}
+
+.certificate{
+	width: 100%;
+	margin-bottom: 60px;
+	&Container{
+		color: $main;
+		&Top{
+			max-width: fit-content;
+			margin: 0 auto;
+			margin-bottom: 20px;			
+			h1{margin-bottom: 10px;}			
+		}
+		p{
+			text-align: center;
+			line-height: 140%;
+			margin: 0 auto;
+			margin-bottom: 20px;
+			max-width: 305px;
+
+		}
+		img{
+			width: 100%;
+		}
+	}
+}
+
+
+@media screen and (min-width:480px){
+	.header{
+		.altBtn{
+			display: inline-block !important;
+			 
+			&:last-of-type{background-color: transparent;}
+		}
+		.custom-select{display: block !important;}
+	}
+	.learningContainerInnerButtons{
+		display: flex;
+		.btn{
+			margin-right: 18px;
+		}
+	}
+	.videoCourseContainerFlex{
+		p{
+			max-width: 437px;
+		}
+	}
+	.aboutMatrixContainerMainInner{
+		grid-template-columns: repeat(2,186px [col-start]);
+		grid-template-rows: repeat(2,100px [row-start]);
+		column-gap: 44px;
+		row-gap: 57px;
+		&Item{align-self: stretch; height: auto !important;}
+	}
+	.certificateContainer{
+		p{
+			max-width: 440px;
+		}
+	}
+	.tarotSeeAllContainer{
+		.btn{
+			max-width: 320px !important;
+			margin: 0 auto;
+			display: block;
+		}
+		&Image{
+			width: 100%;
+			height: 545px;
+			background-repeat: no-repeat;
+			background-image: url(../images/tarotSeelAll480px.png);
+		}
+		
+	}
+}
+@media screen and (min-width:768px){
+	.learningContainer{
+		h1, p{
+			max-width: 445px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		img{
+			width: 100%;
+			max-width: 543px;
+		}
+	}
+	.videoCourseContainerFlex{
+		display: flex;
+		flex-direction: row;
+		p{font-size: 18px !important;}
+		align-items: center;
+		&:last-child{
+			flex-direction: row-reverse;
+		}
+	}
+	.header{
+		&Container{
+			flex-direction: row !important;
+			align-items: center;
+			justify-content: space-between;
+			nav{
+				max-width: 460px !important;
+			}
+		}
+		
+	}
+	.tarotSeeAllContainer{
+		&Image{
+			background-image: url(../images/tarotSeelAll768px.png);
+		}
+		.tarotSeeAllContainerSeeAll{
+			a{
+				span{
+					font-weight: 400;
+					font-size: 24px;
+					line-height: 140%;	
+				}
+			}
+		}
+		
+	}
+	.divinationContainerInner{
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		&Item{
+			max-width: 354px !important;
+		}
+	}
+
+	.weOffer{
+		.showTablets{display: block !important;}
+	}
+	.aboutMatrixContainerMainInner {
+		margin-left: auto; 
+		margin-right: auto;
+	}
+	.aboutMatrixContainerMain img {
+		max-width: 451px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.certificateContainer{
+		p{
+			max-width: none !important;
+		}
+	}
+	.startTheCourseContainer{
+		p{
+			max-width: 633px;
+			line-height: 140%;
+			margin: 0 auto;
+			margin-bottom: 40px;
+
+		}
+	}
+	.weOfferContainerGrid{
+		grid-template-columns: repeat(2, auto [col-start]) !important;
+		grid-template-rows: repeat(4, auto [row-start]) !important;
+		margin-bottom: 27px;
+		button{
+			display: none;
+		}
+		justify-content: space-evenly;
+		&Item{
+			max-width: 236px;
+			width: 100%;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			img{
+				width: 52px;
+			}
+		}
+	}
+	
+
+	.--huge{
+		font-size: 24px !important;
+	}
+
+	.logo{
+		margin-bottom: 0 !important;
+	}
+}
+	
+@media screen and (min-width:1000px){
+
+
+	.weOfferContainer{
+		.showTablets{
+			display: none !important;
+		}
+		.weOfferContainerGrid{
+			grid-template-columns: repeat(3,auto [col-start])!important;
+			grid-template-rows: repeat(3 ,auto [row-start])!important;
+			button{
+				display: inline-block;
+				margin-top: 50px;
+			}
+		}
+	}
+
+	.reviewsContainerControl{
+		max-width: 465px;
+		margin: 0 auto;
+	}
+	.learningContainer {
+		text-align: start !important;
+		padding-left: 50px;
+		h1, p {
+			margin-left: 0;
+			margin-right: 0;
+			font-size: 60px !important;
+			width: 524px;
+			max-width: none;
+			line-height: 70px;
+		}
+		p{font-size: 20px !important; line-height: 140%;}
+		.learningContainerInner{
+			display: flex;
+		}
+		.learningContainerInnerButtons{
+			flex-direction: column;
+			max-width: 320px;
+		}
+		img{
+			min-width: 543px;
+			transform: translate(-155px,-50px);
+		}
+	}
+	.aboutMatrixContainerMain{
+		flex-direction: row;
+		align-items: center;
+	}
+	.certificateContainer {
+		p{
+			max-width: 804px !important;
+			font-size: 18px !important;
+			line-height: 140% !important;
+		}
+	}
+	.startTheCourse{
+		p{
+			font-size: 20px !important;
+			line-height: 140% !important;
+			max-width: 838px;
+		}
+		
+	}
+	.videoCourseContainerFlex{
+		p{
+			max-width: none !important;
+		}
+		img{
+			margin-right: 20px !important;
+		}
+		
+		&:last-of-type{
+			img{
+				margin-right: 0px !important;
+			}
+		}
+	}
+	.tarotSeeAllContainerImage{
+		height: 604px;
+		background-image: url(../images/tarotSeelAll1000px.png);
+	}
+
+	.divinationContainerInnerItem{
+		max-width: 464px !important;
+		img{
+			max-width: none;
+		}
+		.btn{
+			max-width: 320px;
+		}
+	}
+	.learningContainerInner{
+		img{
+			transform: none;
+			transform: translateY(-150px);
+			width: 100%;
+			max-width: none;
+		}
+		.learningContainerInnerLeft{
+			max-width: 450px;
+			width: 100%;
+			p{
+				width: auto !important;
+			}
+		}
+	}
+	
+}
+@media screen and (min-width: 1105px){
+	.whyYouNeedMatrixContainerInner .whyYouNeedMatrixContainerInnerLeftItem:nth-of-type(6) {left: 723px !important;}
+	.whyYouNeedMatrixContainerInner .whyYouNeedMatrixContainerInnerLeftItem:nth-of-type(7) {left: 773px !important;}
+	.whyYouNeedMatrixContainerInner .whyYouNeedMatrixContainerInnerLeftItem:nth-of-type(8) {left: 770px !important;}
+}
+
+
+@media screen and (min-width:1440px) {
+	.header{
+		&Container{
+			nav{
+				max-width: none !important;
+				button{
+					&:first-of-type{
+						width: 200px !important;
+					}
+				}
+			}
+			
+		}
+		.logo{
+			margin-right: 28px;
+		}
+		
+	}
+	.divinationContainerInnerItem{
+		max-width: 598px !important;
+	}
+	.menu{
+		position: static !important;
+		width: auto !important;
+		height: auto !important;
+		flex-direction: row !important;
+		transform: none !important;
+		padding: 0px !important;
+		max-width: 650px !important;
+		width: 100% !important;
+		justify-content: space-between;
+		align-items: center;
+		margin-right: 30px;
+		background-color: transparent !important;
+		color: $main !important;
+		li{
+			margin: 0 !important;
+			color: $main !important;
+			a{color: $main !important;}
+		}
+	}
+	
+	.burgermenu{
+		display: none !important;
+	}
+
+	.learningContainerInner{
+		img{
+			transform: translateY(-115px) !important;
+			width: 100%;
+			max-width: none;
+		}
+	}
+	.videoCourseContainerFlex{
+		img{
+			margin-right: 80px !important;
+			margin-left: 0px !important;
+		}
+		&:last-of-type{
+			img{
+				margin-right: 0px !important;
+				margin-left: 80px!important;
+			}
+		}
+		p{
+			max-width: none !important;
+		}
+	}
+	.startTheCourse{
+		padding-top: 53px !important;
+		margin: 0 auto;
+		max-width: 2380px;
+	}
+}
+
+// @media screen and (min-width: 1520px) {
+// 	.header{
+// 		min-height: 1350px !important;
+// 	}
+// }
+
+
+
+// @media screen and (min-width: 1820px) {
+// 	.header{
+// 		background-size: 100% 77%;
+// 	}
+// }
+// @media screen and (min-width: 2500px) {
+// 	.footer{
+// 		max-width: 75vw;
+// 	}
+// }
+
+.--activeMenu{
+	transform: translateY(0%) !important;
+}
+.--activeMenuBtn{
+	transform: rotate(90deg) !important;
+}
+.custom-select {
+	position: relative;
+}
+  
+.custom-select select {
+	display: none;
+}
+
+.select-selected {
+	background-color: transparent !important;
+	color: $main !important;
+	padding: 17px 10px !important;
+}
+
+.select-selected:after {
+	position: absolute;
+	content: "";
+	top: 22px;
+	right: 10px;
+	width: 11px;
+	height: 5px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-image: url(../images/select.svg);
+}
+
+
+
+
+.select-items div,.select-selected {
+	color: $main !important;
+	background-color: transparent;
+	padding: 17px 17px;
+	height: 50px;
+	border: 1px solid transparent;
+	border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+	cursor: pointer;
+	transition: .3s;
+	border: 1px solid $main;
+}
+
+.select-items {
+	position: absolute;
+	background-color: $white;
+	top: 100%;
+	left: 0;
+	right: 0;
+	z-index: 99;
+	color: $main !important;
+	transition: .3s;
+}
+
+.select-hide {
+	display: none;
+}
+
+.select-items div:hover, .same-as-selected {
+	background-color: $yellowRed;
+}
+
+
+@keyframes fade {
+	from {opacity: 0;}
+	to {opacity: 1;}
+}
+
+.whyYouNeedMatrix{
+	background-image: url(../images/youNeedMatrix/background.png);
+	background-size: cover;
+	width: 100%;
+	min-height: 952px;
+	padding-top: 50px;
+	color: $main;
+	background-repeat: no-repeat;
+	margin-bottom: 70px;
+	max-height: 950px;
+	&Container{
+		&Top{
+			margin: 0 auto;
+			max-width: fit-content;
+			margin-bottom: 40px;
+			.line{
+				margin-top: 10px;
+			}
+		}
+		&Inner{
+			display: flex;
+			justify-content: space-between;
+			&Left{
+				width: 100%;
+				min-width: 175px;
+				&Item{
+					display: flex;
+					line-height: 19px;
+					max-width: 211px;
+					margin-bottom: 40px;
+					width: 100%;
+					img{
+						margin-right: 8px;
+						width: 35px !important;
+					}
+					&:nth-of-type(1){
+						color: #DC0111;
+					}
+					&:nth-of-type(2){
+						color: #D55400;
+					}
+					&:nth-of-type(3){
+						color:  #E39302;
+					}
+					&:nth-of-type(4){
+						color: #018925;
+					}
+					&:nth-of-type(5){
+						color: #0488D2;
+					}
+					&:nth-of-type(6){
+						color: #DD5701;
+					}
+					&:nth-of-type(7){
+						color: #94057E;
+					}
+					&:nth-of-type(8){
+						color: #0C3595;
+					}
+					&:last-of-type{
+						margin-bottom: 0 !important;
+					}
+				}
+			}
+			img{
+				max-height: 267px;
+				
+				&:first-of-type{
+					max-width: 194px;
+					max-height: 193px;
+				}
+			}
+		}
+	}
+}
+
+
+.weOffer{
+	width: 100%;
+	background-color: $white;
+	color: $main;
+	&Container{
+		padding-top: 37px;
+		padding-bottom: 30px;
+		text-align: center;
+		h2{
+			margin-bottom: 30px;
+		}
+		&Grid{
+			display: grid;
+			grid-template-columns: repeat(1, 100% [col-start]);
+			grid-template-rows: repeat(9, auto [row-start]);
+			row-gap: 35px;
+			&Item{
+				img{
+					margin-bottom: 20px;
+				}
+			}
+		}
+		button{
+			width: 100%;
+			max-width: none;
+			border: none;
+		}
+	}
+}
+
+.reviews{
+	margin-bottom: 70px;
+	width: 100%;
+	color: $main;
+	&Container{
+		&Top{
+			margin-bottom: 20px;
+			h1{
+				margin-bottom: 10px;
+			}
+		}
+		&Slider{
+			width: 100%;
+			display: flex;
+			margin-bottom: 40px;
+			&Item{
+				border: 1px solid $main;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				padding: 25px;
+			}
+		}
+		&Control{
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			width: 100%;
+			&Dots{
+				display: flex;
+				margin: 0 auto;
+				max-width: fit-content;
+				&Item{
+					height: 9px;
+					width: 9px;
+					border-radius: 50%;
+					background: $yellowRed;
+					margin-right: 23px;
+					transition: .3s;
+					&:last-of-type{
+						margin-right: 0 !important;
+					}
+				}
+				.--dotActive{
+					background-color: $main;
+					outline: 1px solid $main;
+					outline-offset: 7px;
+				}
+			}
+		}
+	}
+}
+
+.startTheCourse {
+	width: 100%;
+	background-color: $yellowRed;
+	padding: 20px 14px;
+	&Container{
+		p{
+			line-height: 140%;
+			text-align: center;
+			margin-bottom: 10px;
+		}
+		.btn{
+			margin: 0 auto;
+			height: 70px;
+			max-width: 314px !important;
+			line-height: 70px !important;
+			display: block;
+		}
+	}
+}
