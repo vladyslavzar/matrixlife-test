@@ -308,9 +308,13 @@ input{
 		a{
 			display: inline;
 			color: $main !important;
+			margin-left: 10px;
+			&:first-of-type{
+				margin-left: 0px !important;
+			}
 			&:last-of-type{
 				color: #CDCDCD !important;
-				margin-left: 10px;
+				
 			}
 		}
 	}
@@ -577,6 +581,38 @@ input{
 		}
 		
 	}
+	.allTarotMain{
+		width: 100%;
+		&Container{
+			.mobileHide{display: none !important;}
+			display: flex;
+			flex-wrap: wrap;
+			&Row{
+				display: flex !important;
+				justify-content: space-between;
+				flex-wrap: wrap;
+				width: 100%;
+				img{
+					max-width: 210px !important;
+					height: 326px !important;
+				}
+				&Plug{
+					width: 100%;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					max-width: 210px !important;
+					height: 326px !important;
+					border: 1px solid $main;
+					img{
+						width: 124px !important;
+						height: 17px !important;
+					}
+				}
+			}
+
+		}
+	}
 }
 @media screen and (min-width:768px){
 	.learningContainer{
@@ -689,6 +725,63 @@ input{
 	.logo{
 		margin-bottom: 0 !important;
 	}
+	.allTarotMain{
+		width: 100%;
+		&Container{
+			.mobileHide{display: none;}
+			display: flex;
+			flex-wrap: wrap;
+			&Row{
+				display: none !important;
+				justify-content: space-between;
+				flex-wrap: wrap;
+				img{
+					max-width: 210px !important;
+					height: 326px !important;
+				}
+				&Plug{
+					width: 100%;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					max-width: 210px !important;
+					height: 326px !important;
+					border: 1px solid $main;
+					img{
+						width: 124px !important;
+						height: 17px !important;
+					}
+				}
+			}
+			&Grid{
+				display: grid !important;
+				grid-template-columns: repeat(3, 225px [col-start]);
+				grid-template-rows: repeat(5, 349px [row-start]);
+				margin: 0 auto;
+				img{
+					max-width: 225px !important;
+					height: 349px !important;
+				}
+				&Plug{
+					width: 100%;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					max-width: 225px !important;
+					height: 349px !important;
+					border: 1px solid $main;
+					img{
+						width: 124px !important;
+						height: 17px !important;
+					}
+				}
+				.mobileHide{display: inline-block !important;}
+			}
+		}
+	}
+	.goBack{
+		margin-left: 40px;
+	}
 }
 	
 @media screen and (min-width:1000px){
@@ -798,7 +891,43 @@ input{
 			}
 		}
 	}
-	
+	.allTarotMain{
+		width: 100%;
+		&Container{
+			.mobileHide{display: inline-block !important;}
+			display: flex;
+			flex-wrap: wrap;
+			&Row{
+				display: flex !important;
+				justify-content: space-between;
+				flex-wrap: nowrap !important;
+				width: 100%;
+				img{
+					max-width: 210px !important;
+					height: 326px !important;
+					margin-right: 20px;
+					&:last-child{
+						margin-right: 0px;
+					}
+				}
+				
+				&Plug{
+					width: 100%;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					max-width: none !important;
+					height: 326px !important;
+					border: 1px solid $main;
+					img{
+						width: 247px !important;
+						height: 25px !important;
+					}
+				}
+			}
+			&Grid{display: none !important;}
+		}
+	}
 }
 @media screen and (min-width: 1105px){
 	.whyYouNeedMatrixContainerInner .whyYouNeedMatrixContainerInnerLeftItem:nth-of-type(6) {left: 723px !important;}
@@ -879,6 +1008,43 @@ input{
 		padding-top: 53px !important;
 		margin: 0 auto;
 		max-width: 2380px;
+	}
+	.allTarotMain{
+		width: 100%;
+		&Container{
+			.mobileHide{display: inline-block !important;}
+			display: flex;
+			flex-wrap: wrap;
+			&Row{
+				display: flex !important;
+				justify-content: space-between;
+				flex-wrap: nowrap !important;
+				width: 100%;
+				img{
+					max-width: 290px !important;
+					height: 450px !important;
+					margin-right: 20px;
+					&:last-child{
+						margin-right: 0px;
+					}
+				}
+				
+				&Plug{
+					width: 100%;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					max-width: none !important;
+					height: 450px !important;
+					border: 1px solid $main;
+					img{
+						width: 247px !important;
+						height: 25px !important;
+					}
+				}
+			}
+			&Grid{display: none !important;}
+		}
 	}
 }
 
@@ -1151,4 +1317,38 @@ input{
 			display: block;
 		}
 	}
+}
+
+.allTarotMain{
+	width: 100%;
+	&Container{
+		.mobileHide{display: none;}
+		&Row{
+			display: flex;
+			justify-content: space-between;
+			flex-wrap: wrap;
+			img{
+				max-width: 167px;
+				height: 259px;
+			}
+			&Plug{
+				width: 100%;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				max-width: 167px;
+				height: 259px;
+				border: 1px solid $main;
+				img{
+					width: 124px;
+					height: 17px;
+				}
+			}
+		}
+	}
+}
+.goBack{
+	font-weight: 400;
+	font-size: 18px;
+	color: #1B3840 !important;
 }
