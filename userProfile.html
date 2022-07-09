@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/jquery.fancybox.css">
+  <link rel="stylesheet" href="css/profile.css">
+</head>
+<body>
+  <header class="header">
+    <div class="headerContainer container">
+      <img src="images/DarkLogo.png" alt="">
+      <div class="headerContainerDesktop" style="display: none;">
+        <div class="headerContainerDesktopTarif" style="display: none;">
+          <p>Тариф:<span>  Вместе и навсегда</span></p>
+        </div>
+        <div class="custom-select" style="width:52px;">
+          <select name="lang" >
+            <option value="0">En</option>
+            <option value="1">En</option>
+            <option value="2">Ru</option>
+            <option value="3">Sp</option>
+          </select>
+        </div>
+        <div class="headerContainerDesktopProfile">
+          <img src="images/pfp.png" alt="">
+          <div class="headerContainerDesktopProfileName">
+            <h5 class="--huge">Алина М.</h5>
+            <h6 style="color: #9C9C9C;">test@yandex.ru</h6>
+          </div>
+        </div>
+        <img src="images/exit.svg" alt="" style="display: none; margin-left: 40px;">
+      </div>
+      <div class="headerContainerMobile"></div>
+    </div>
+  </header>
+  <div class="wrapper">
+    <div class="wrapperContainer container">
+      <aside class="aside" style="display: none;">
+        <div class="asideInner">
+          <div class="asideInnerItem --asideInnerItemActive">
+            <h3 class="--massive">My account</h3>
+          </div>
+          <div class="asideInnerItem">
+            <h3 class="--massive">Тарифы</h3>
+          </div>
+          <div class="asideInnerItem">
+            <h3 class="--massive">Purchases</h3>
+          </div>
+          <div class="asideInnerItem --asideInnerItemNew">
+            <h3 class="--massive">Education</h3>
+          </div>
+          <div class="asideInnerItem">
+            <h3 class="--massive">Matrix:</h3>
+            <ul>
+              <li>Compatibility</li>
+              <li>Children's</li>
+              <li>Your matrix</li>
+              <li>Matrices archive</li>
+            </ul>
+          </div>
+          <div class="asideInnerItem">
+            <h3 class="--massive">Chat of consultants</h3>
+          </div>
+          <div class="asideInnerItem">
+            <h3 class="--massive">Management</h3>
+          </div>
+        </div>
+      </aside>
+      <main class="main">
+        <div class="mainLeft">
+          <section class="auth">
+
+            <h1 class="--massive">My account</h1>
+            <form action="">
+              <div class="authContainerName">
+                <div class="input"><input type="text"> </div>
+                
+                <div class="input"><input type="text"></div>
+              </div>
+              <div class="input"><input type="text"></div>
+              <div class="input"><input type="password"></div>
+            </form>
+          
+          </section>
+          <section class="changePassword">
+            <h1 class="--massive">Change Password</h1>
+            <div class="input"><input type="password" name="" id=""> <span>do not fill in to leave the former</span></div>
+            <div class="input"><input type="password" name="" id=""> <span>do not fill in to leave the former</span></div>
+            <div class="input"><input type="password" name="" id=""></div>
+            <button class="btn">Save</button>
+          </section>
+        </div>
+        <div class="mainTarif" style="display: none;">
+          <h4 class="--massive">Тариф</h4>
+          <div class="mainTarifInner">
+            <p class="--small">Ваш тариф:
+              Вместе и навсегда</p>
+            <div class="mainTarifInnerBtn"><span style="color: #9C9C9C;">Изменить</span></div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </div>
+  
+  
+  <div class="popUpSurrounding">
+    <div class="popUp">
+      <h1 class="--massive">Отлично!</h1>
+      <p class="--medium">Ваши данные изменены</p>
+      <button class="btn">Спасибо</button>
+    </div>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/jquery.fancybox.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
