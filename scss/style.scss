@@ -460,6 +460,29 @@ input{
 	}
 }
 @media screen and (min-width:768px){
+	.userArchiveMatrixPersonalTop{
+		.--medium{
+			font-weight: 400 !important;
+			font-size: 32px !important;
+			line-height: 140% !important;
+		}
+	}
+	.userArchiveMatrixPersonalTop{
+        max-width: 616px ;
+    }
+	.userArchiveMatrixPersonalInnerAccordionLocked{
+        flex-direction: row !important;
+        align-items: center;
+        justify-content: space-between !important;
+        p{
+            margin-bottom: 0 !important;
+            max-width: 340px;
+            text-align: start !important;
+        }
+        .btn{
+            margin-bottom: 0 !important;
+        }
+    }
 	.mainThingBotContainer{
 		position: relative !important;
 		img{
@@ -670,6 +693,11 @@ input{
 	
 }
 @media screen and (min-width:1000px){
+	.featuresGridContainer {
+		grid-template-columns: repeat(2, 370px [col-start]) !important;
+		grid-template-rows: repeat(2, auto [row-start]) !important;
+		column-gap: 53px;
+	}
 	.header{
 		background-image: url(../images/headerBgSmallDesktop.png);
 		background-position: 0 104px !important;
@@ -987,8 +1015,20 @@ input{
 
 
 @media screen and (min-width:1440px) {
-	
-	
+	.featuresGridContainer {
+		grid-template-columns: repeat(3, 370px [col-start]) !important;
+		grid-template-rows: repeat(1, auto [row-start]) !important;
+		column-gap: 53px;
+		.--huge{
+			display: none !important;
+		}
+	}
+	.userArchiveMatrixPersonalContainer{
+		padding-left: 130px;
+	}
+	.userArchiveMatrixPersonal{
+        max-width: 907px;
+    }
 	.workContainer{
 		background-image: url(../images/workContainerBg.png);
 		background-size: contain;
@@ -2025,7 +2065,9 @@ input{
 		}
 	}
 }
-
+.userArchiveMatrixPersonal{
+	max-width: 907px !important;
+}
 .socialNetworks{
 	color: $white;
 	margin-bottom: 70px;
@@ -2223,6 +2265,190 @@ input{
 				font-weight: 300;
 				text-align: center;
 			}
+		}
+	}
+}
+.userArchiveMatrixPersonalBot{
+    .btn{
+        margin-bottom: 0px !important;
+    }
+}
+
+.userArchiveMatrixPersonal{
+    width: 100%;
+    .--massive{
+        font-size: 24px !important;
+        line-height: 24px !important;
+    }
+    &Top{
+        width: 100%;
+        padding-bottom: 10px;
+        margin-bottom: 40px;
+        border-bottom: 1px solid #ACC1C6;
+        display: flex;
+        align-items: center;
+        &Date{
+            display: flex;
+            flex-direction: column;
+            margin-left: auto;
+            span{
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 14px;
+                color: #9D9D9D;
+                margin-bottom: 5px;
+            }
+            p{
+                color: #626262;
+            }
+        }
+    }
+    &Inner{
+        width: 100%;
+        &Item{
+            margin-bottom: 20px;
+        }
+        &Accordion{
+            background-color: $white;
+            display: flex;
+            align-items: center;
+            padding: 18px;
+            position: relative;
+            transition: .3s;
+            .accordionBtn{
+                margin-left: auto;
+                transition: .3s;
+            }
+            &::after{
+                height: 1px;
+                transition: .3s;
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                transform: translateX(-50%);
+                content: '';
+                width: calc(100% - 36px);
+                background-color: transparent;
+            }
+        }
+        .--userArchiveMatrixPersonalInnerAccordionOpened{
+            .accordionBtn{
+                transform: rotate(180deg);
+            }
+            &::after{background-color: $main;}
+        }
+        &AccordionContent{
+            padding: 18px;
+            background-color: $white;
+            transition: .3s;
+            .--small{
+                line-height: 140% !important;
+                color: $black;
+            }
+            &Comment{
+                display: flex;
+                margin-bottom: 20px;
+                .circle{
+                    min-width: 40px;
+                    height: 40px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 50%;
+                    background-color: $yellowRed;
+                    color: $white;
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 20px;
+                    margin-right: 10px;
+                }
+            }
+        }
+        &AccordionLocked{
+            width: 100%;
+            padding: 18px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: $white;
+            p{
+                line-height: 21px;
+                margin-bottom: 36px;
+                text-align: center;
+            }
+            .btn{
+                max-width: 206px !important;
+                height: 50px;
+                line-height: 50px;
+            }
+        }
+    }
+    &Bot{
+        padding: 18px;
+        background-color: $yellowRed;
+        color: $main;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        h3{
+            margin-bottom: 15px;
+        }
+        p{
+            margin-bottom: 15px;
+        }
+        .btn{
+            max-width: 282px;
+            height: 67px;
+            line-height: 67px;
+        }
+    }
+
+    .altBtn{
+        max-width: 440px;
+        height: 72px;
+        line-height: 72px;
+        border: none !important;
+        margin-top: 50px;
+        margin-bottom: 80px;
+    }
+}
+
+.userArchiveMatrixPersonalTop{
+	text-align: center;
+	max-width: fit-content;
+	margin: 0 auto;
+	margin-bottom: 30px;
+	text-align: center;
+	display: block;
+	border: none;
+	color: $white;
+	.line{
+		display: inline-block;
+	}
+}
+
+.featuresGrid{
+	margin-bottom: 50px;
+	color: $white;
+	text-align: center;
+	&Container{
+		display: grid;
+		grid-template-columns: repeat(1, 100% [col-start]);
+		grid-template-rows: repeat(4, auto [row-start]);
+		&Item{
+			width: 100%;
+			margin: 0 auto;
+			max-width: 370px;
+			padding: 50 60px;
+			border: 1px solid #C4C4C4;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			margin-bottom: 40px;
+			min-height: 268px;
 		}
 	}
 }
