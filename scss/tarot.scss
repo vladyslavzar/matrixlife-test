@@ -690,6 +690,9 @@ input{
 		align-items: center;
 		&Item{
 			max-width: 354px !important;
+			&:last-of-type{
+				padding-top: 55px;
+			}
 		}
 	}
 
