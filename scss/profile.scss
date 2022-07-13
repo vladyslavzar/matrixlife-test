@@ -479,6 +479,7 @@ h2{
 }
 
 @media screen and (min-width: 768px) {
+
     .testDesktop{
         padding: 30px 29px 0 29px !important;
         max-width: 728px !important;
@@ -594,6 +595,17 @@ h2{
         max-width: 731px !important;
     }
     .pursharesTable{display: block !important;}
+    .educationDescrMain{
+        max-width: none !important;
+        width: 100% !important;
+
+    }
+    .educationDescr{
+        max-width: none !important;
+    }
+    .educationDescrInner{
+        padding-right: 191px;
+    }
 }
 
 @media screen and (min-width: 1000px) {
@@ -738,6 +750,7 @@ h2{
 }
 
 @media screen and (min-width: 1440px) {
+
     .educationAsideMobile{
         margin-left: 40px !important;
     }
