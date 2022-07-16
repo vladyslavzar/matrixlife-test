@@ -459,11 +459,8 @@ input{
 	}
 }
 @media screen and (min-width:500px){.header{min-height: 1500px !important;}}
-@media screen and (min-width: 688px) {
-	.header{
-		min-height: 1705px !important;
-	}
-}
+@media screen and (min-width:866px){.header{min-height: 1600px !important;}}
+@media screen and (min-width:940px){.header{min-height: 1700px !important;}}
 @media screen and (min-width:768px){
 	.userArchiveMatrixPersonalTop{
 		.--medium{
@@ -1107,7 +1104,19 @@ input{
 .fateNumbersContainerInner{
 
 }
+.whoUsesCalcContainerTabsInner{
 
+	button{
+		color: $main !important;
+		background-color: $yellowRed !important;
+	}
+	&:last-of-type{
+		button{
+			background-color: $main !important;
+			color: $white !important;
+		}
+	}
+}
 
 @media screen and (min-width:1440px) {
     .tarifs{
@@ -1123,24 +1132,27 @@ input{
 	}
 	
 	.whoUsesCalcContainerTabsInner{
-		background-color: #FFF3ED !important;
+
 		p{
 			font-weight: 400 !important;
 			font-size: 18px !important;
 			line-height: 140% !important;
 		}
+
+		background-color: #FFF9F6 !important;
 		button{
+			color: $main !important;
 			margin: 0 !important;
 			margin-left: 50px !important;
-			background-color: $main !important;
-			
+			background-color: $yellowRed !important;
 		}
 		&:last-of-type{
-			background-color: #FFF9F6 !important;
+			background-color: #FFF3ED !important;
 			button{
-				color: $main !important;
-				
-				background-color: $yellowRed !important;
+
+				background-color: $main !important;
+				color: $white !important;
+	
 			}
 		}
 	}
@@ -1409,20 +1421,18 @@ input{
 	}
 	.whoUsesCalcContainerTabs{
 		display: flex !important;
-		flex-direction: row-reverse !important;
+		flex-direction: row !important;
 		max-width: none !important;
 		justify-content: space-between;
 		&Inner{
 			height: fit-content !important;
-			max-width: 598px !important;
-			margin-top: 15px !important;
-			&:first-of-type{
-				
-			}
+
+			margin-top: 0px !important;
+			max-width: 763px !important;
+			margin-right: 20px !important;
 			&:last-of-type{
-				margin-top: 0px !important;
-				max-width: 763px !important;
-				margin-right: 20px !important;
+				max-width: 598px !important;
+				margin-top: 15px !important;
 			}
 		}
 	}
