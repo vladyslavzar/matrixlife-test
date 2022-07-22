@@ -104,6 +104,9 @@ h2{
 .--boldest{
 	font-weight: 700;
 }
+.allTarotMainContainerGrid{
+	display: none;
+}
 input{
 	border: 1px solid $main;
 	height: 54px;
@@ -115,8 +118,8 @@ input{
 
 @media screen and (max-width: 500px) {
 	h1{
-		font-size: 24px !important;
-		line-height: 140% !important;
+		font-size: 24px ;
+		line-height: 140% ;
 	}
 	.--big{
 		font-size: 16px;
@@ -126,16 +129,16 @@ input{
 }
 @media screen and (min-width:500px){
 	.whyYouNeedMatrix{
-		min-height: 1200px !important;
-		background-size: 100% 99% !important;
+		min-height: 1200px ;
+		background-size: 100% 99% ;
 	}
 	.header{
-		background-position: 0px 100px !important;
+		background-position: 0px 100px ;
 	}
 }
 @media screen and (min-width:600px){
 	.header{
-		background-position: top !important;
+		background-position: top ;
 	}
 }
 @media screen and (max-width: 380px) {
@@ -145,7 +148,7 @@ input{
 }
 @media screen and (max-width: 370px) {
 	.header{
-		background-position: 0 100px !important;
+		background-position: 0 100px ;
 	}
 	.tab{
 		white-space: nowrap;
@@ -267,7 +270,7 @@ input{
 				}
 			}
 			button{
-				border-radius: 0 !important;
+				border-radius: 0 ;
 				&:first-of-type{
 					width: 291px;
 					height: 50px;
@@ -282,7 +285,7 @@ input{
 			}
 			.altBtn{
 				&:first-of-type{
-					border: none !important;
+					border: none ;
 				}
 			}
 			.custom-select{display: none;}
@@ -307,13 +310,13 @@ input{
 	&Container{
 		a{
 			display: inline;
-			color: $main !important;
+			color: $main ;
 			margin-left: 10px;
 			&:first-of-type{
-				margin-left: 0px !important;
+				margin-left: 0px ;
 			}
 			&:last-of-type{
-				color: #CDCDCD !important;
+				color: #CDCDCD ;
 				
 			}
 		}
@@ -332,10 +335,10 @@ input{
 			height: 60px;
 			width: 100%;
 			margin-bottom: 10px;
-			line-height: 60px !important;
-			max-width: none !important;
+			line-height: 60px ;
+			max-width: none ;
 			&:last-of-type{
-				margin: 0 !important;
+				margin: 0 ;
 				background-color: transparent;
 			}
 		}
@@ -395,7 +398,7 @@ input{
 			margin: 0 auto;
 		}
 		.btn{
-			max-width: none !important;
+			max-width: none ;
 		}
 		&SeeAll{
 			a{
@@ -535,565 +538,10 @@ input{
 }
 
 
-@media screen and (min-width:480px){
-	.header{
-		.altBtn{
-			display: inline-block !important;
-			 
-			&:last-of-type{background-color: transparent;}
-		}
-		.custom-select{display: block !important;}
-	}
-	.learningContainerInnerButtons{
-		display: flex;
-		.btn{
-			margin-right: 18px;
-		}
-	}
-	.videoCourseContainerFlex{
-		p{
-			max-width: 437px;
-		}
-	}
-	.aboutMatrixContainerMainInner{
-		grid-template-columns: repeat(2,186px [col-start]);
-		grid-template-rows: repeat(2,100px [row-start]);
-		column-gap: 44px;
-		row-gap: 57px;
-		&Item{align-self: stretch; height: auto !important;}
-	}
-	.certificateContainer{
-		p{
-			max-width: 440px;
-		}
-	}
-	.tarotSeeAllContainer{
-		.btn{
-			max-width: 320px !important;
-			margin: 0 auto;
-			display: block;
-		}
-		&Image{
-			width: 100%;
-			height: 545px;
-			background-repeat: no-repeat;
-			background-image: url(../images/tarotSeelAll480px.png);
-		}
-		
-	}
-	.allTarotMain{
-		width: 100%;
-		&Container{
-			.mobileHide{display: none !important;}
-			display: flex;
-			flex-wrap: wrap;
-			&Row{
-				display: flex !important;
-				justify-content: space-between;
-				flex-wrap: wrap;
-				width: 100%;
-				img{
-					max-width: 210px !important;
-					height: 326px !important;
-				}
-				&Plug{
-					width: 100%;
-					display: flex;
-					justify-content: center;
-					align-items: center;
-					max-width: 210px !important;
-					height: 326px !important;
-					border: 1px solid $main;
-					img{
-						width: 124px !important;
-						height: 17px !important;
-					}
-				}
-			}
-
-		}
-	}
-	.popUp{
-		padding-left: 20px !important;
-		padding-right: 20px !important;
-	}
-	.popUpCheckbox p{
-		max-width: none !important;
-	}
-}
-.validation{transform: translateY(-20px); display: block ;}
-@media screen and (min-width:768px){
-	.popUp{
-		max-width: 700px ;
-		padding-left: 30px !important;
-		padding-right: 120px !important;
-	}
-	.popUpCustomer{
-		div{
-			display: flex;
-			input{
-				&:first-of-type{
-					margin-right: 12px;
-				}
-			}
-		}
-	}
-	.learningContainer{
-		h1, p{
-			max-width: 445px;
-			margin-left: auto;
-			margin-right: auto;
-		}
-		img{
-			width: 100%;
-			max-width: 543px;
-		}
-	}
-	.videoCourseContainerFlex{
-		display: flex;
-		flex-direction: row;
-		p{font-size: 18px !important;}
-		align-items: center;
-		&:last-child{
-			flex-direction: row-reverse;
-		}
-	}
-	.header{
-		&Container{
-			flex-direction: row !important;
-			align-items: center;
-			justify-content: space-between;
-			nav{
-				max-width: 460px !important;
-			}
-		}
-		
-	}
-	.tarotSeeAllContainer{
-		&Image{
-			background-image: url(../images/tarotSeelAll768px.png);
-		}
-		.tarotSeeAllContainerSeeAll{
-			a{
-				span{
-					font-weight: 400;
-					font-size: 24px;
-					line-height: 140%;	
-				}
-			}
-		}
-		
-	}
-	.divinationContainerInner{
-		flex-direction: row;
-		justify-content: space-between;
-		align-items: center;
-		&Item{
-			max-width: 354px !important;
-			&:last-of-type{
-				padding-top: 55px;
-			}
-		}
-	}
-
-	.weOffer{
-		.showTablets{display: block !important;}
-	}
-	.aboutMatrixContainerMainInner {
-		margin-left: auto; 
-		margin-right: auto;
-	}
-	.aboutMatrixContainerMain img {
-		max-width: 451px;
-		margin-left: auto;
-		margin-right: auto;
-	}
-	.certificateContainer{
-		p{
-			max-width: none !important;
-		}
-	}
-	.startTheCourseContainer{
-		p{
-			max-width: 633px;
-			line-height: 140%;
-			margin: 0 auto;
-			margin-bottom: 40px;
-
-		}
-	}
-	.weOfferContainerGrid{
-		grid-template-columns: repeat(2, auto [col-start]) !important;
-		grid-template-rows: repeat(4, auto [row-start]) !important;
-		margin-bottom: 27px;
-		button{
-			display: none;
-		}
-		justify-content: space-evenly;
-		&Item{
-			max-width: 236px;
-			width: 100%;
-			display: flex;
-			flex-direction: column;
-			justify-content: center;
-			align-items: center;
-			img{
-				width: 52px;
-			}
-		}
-	}
-	
-
-	.--huge{
-		font-size: 24px !important;
-	}
-
-	.logo{
-		margin-bottom: 0 !important;
-	}
-	.allTarotMain{
-		width: 100%;
-		&Container{
-			.mobileHide{display: none;}
-			display: flex;
-			flex-wrap: wrap;
-			&Row{
-				display: none !important;
-				justify-content: space-between;
-				flex-wrap: wrap;
-				img{
-					max-width: 210px !important;
-					height: 326px !important;
-				}
-				&Plug{
-					width: 100%;
-					display: flex;
-					justify-content: center;
-					align-items: center;
-					max-width: 210px !important;
-					height: 326px !important;
-					border: 1px solid $main;
-					img{
-						width: 124px !important;
-						height: 17px !important;
-					}
-				}
-			}
-			&Grid{
-				display: grid !important;
-				grid-template-columns: repeat(3, 225px [col-start]);
-				grid-template-rows: repeat(5, 349px [row-start]);
-				margin: 0 auto;
-				img{
-					max-width: 225px !important;
-					height: 349px !important;
-				}
-				&Plug{
-					width: 100%;
-					display: flex;
-					justify-content: center;
-					align-items: center;
-					max-width: 225px !important;
-					height: 349px !important;
-					border: 1px solid $main;
-					img{
-						width: 124px !important;
-						height: 17px !important;
-					}
-				}
-				.mobileHide{display: inline-block !important;}
-			}
-		}
-	}
-	.goBack{
-		margin-left: 40px;
-	}
-}
-	
-@media screen and (min-width:1000px){
-	.popUp{
-		max-width: 960px;
-		padding-left: 30px !important;
-		padding-right: 382px !important;
-		background-position: right 50px;
-		background-repeat: no-repeat;
-		
-		background-image: url(../images/popUp.jpg);
-	}
-
-	.weOfferContainer{
-		.showTablets{
-			display: none !important;
-		}
-		.weOfferContainerGrid{
-			grid-template-columns: repeat(3,auto [col-start])!important;
-			grid-template-rows: repeat(3 ,auto [row-start])!important;
-			button{
-				display: inline-block;
-				margin-top: 50px;
-			}
-		}
-	}
-
-	.reviewsContainerControl{
-		max-width: 465px;
-		margin: 0 auto;
-	}
-	.learningContainer {
-		text-align: start !important;
-		padding-left: 50px;
-		h1, p {
-			margin-left: 0;
-			margin-right: 0;
-			font-size: 60px !important;
-			width: 524px;
-			max-width: none;
-			line-height: 70px;
-		}
-		p{font-size: 20px !important; line-height: 140%;}
-		.learningContainerInner{
-			display: flex;
-		}
-		.learningContainerInnerButtons{
-			flex-direction: column;
-			max-width: 320px;
-		}
-		img{
-			min-width: 543px;
-			transform: translate(-155px,-50px);
-		}
-	}
-	.aboutMatrixContainerMain{
-		flex-direction: row;
-		align-items: center;
-	}
-	.certificateContainer {
-		p{
-			max-width: 804px !important;
-			font-size: 18px !important;
-			line-height: 140% !important;
-		}
-	}
-	.startTheCourse{
-		p{
-			font-size: 20px !important;
-			line-height: 140% !important;
-			max-width: 838px;
-		}
-		
-	}
-	.videoCourseContainerFlex{
-		p{
-			max-width: none !important;
-		}
-		img{
-			margin-right: 20px !important;
-		}
-		
-		&:last-of-type{
-			img{
-				margin-right: 0px !important;
-			}
-		}
-	}
-	.tarotSeeAllContainerImage{
-		height: 604px;
-		background-image: url(../images/tarotSeelAll1000px.png);
-	}
-
-	.divinationContainerInnerItem{
-		max-width: 464px !important;
-		img{
-			max-width: none;
-		}
-		.btn{
-			max-width: 320px;
-		}
-	}
-	.learningContainerInner{
-		img{
-			transform: none;
-			transform: translateY(-150px);
-			width: 100%;
-			max-width: none;
-		}
-		.learningContainerInnerLeft{
-			max-width: 450px;
-			width: 100%;
-			p{
-				width: auto !important;
-			}
-		}
-	}
-	.allTarotMain{
-		width: 100%;
-		&Container{
-			.mobileHide{display: inline-block !important;}
-			display: flex;
-			flex-wrap: wrap;
-			&Row{
-				display: flex !important;
-				justify-content: space-between;
-				flex-wrap: nowrap !important;
-				width: 100%;
-				img{
-					max-width: 210px !important;
-					height: 326px !important;
-					margin-right: 20px;
-					&:last-child{
-						margin-right: 0px;
-					}
-				}
-				
-				&Plug{
-					width: 100%;
-					display: flex;
-					justify-content: center;
-					align-items: center;
-					max-width: none !important;
-					height: 326px !important;
-					border: 1px solid $main;
-					img{
-						width: 247px !important;
-						height: 25px !important;
-					}
-				}
-			}
-			&Grid{display: none !important;}
-		}
-	}
-}
-@media screen and (min-width: 1105px){
-	.whyYouNeedMatrixContainerInner .whyYouNeedMatrixContainerInnerLeftItem:nth-of-type(6) {left: 723px !important;}
-	.whyYouNeedMatrixContainerInner .whyYouNeedMatrixContainerInnerLeftItem:nth-of-type(7) {left: 773px !important;}
-	.whyYouNeedMatrixContainerInner .whyYouNeedMatrixContainerInnerLeftItem:nth-of-type(8) {left: 770px !important;}
-}
-
-
-@media screen and (min-width:1440px) {
-	.popUp{
-		max-width: 1018 px;
-		padding-left: 30px !important;
-		padding-right: 440px !important;
-		background-position: right 79px;
-		background-repeat: no-repeat;
-		
-		background-image: url(../images/popUp.jpg);
-	}
-	.header{
-		&Container{
-			nav{
-				max-width: none !important;
-				button{
-					&:first-of-type{
-						width: 200px !important;
-					}
-				}
-			}
-			
-		}
-		.logo{
-			margin-right: 28px;
-		}
-		
-	}
-	.divinationContainerInnerItem{
-		max-width: 598px !important;
-	}
-	.menu{
-		position: static !important;
-		width: auto !important;
-		height: auto !important;
-		flex-direction: row !important;
-		transform: none !important;
-		padding: 0px !important;
-		max-width: 650px !important;
-		width: 100% !important;
-		justify-content: space-between;
-		align-items: center;
-		margin-right: 30px;
-		background-color: transparent !important;
-		color: $main !important;
-		li{
-			margin: 0 !important;
-			color: $main !important;
-			a{color: $main !important;}
-		}
-	}
-	
-	.burgermenu{
-		display: none !important;
-	}
-
-	.learningContainerInner{
-		img{
-			transform: translateY(-115px) !important;
-			width: 100%;
-			max-width: none;
-		}
-	}
-	.videoCourseContainerFlex{
-		img{
-			margin-right: 80px !important;
-			margin-left: 0px !important;
-		}
-		&:last-of-type{
-			img{
-				margin-right: 0px !important;
-				margin-left: 80px!important;
-			}
-		}
-		p{
-			max-width: none !important;
-		}
-	}
-	.startTheCourse{
-		padding-top: 53px !important;
-		margin: 0 auto;
-		max-width: 2380px;
-	}
-	.allTarotMain{
-		width: 100%;
-		&Container{
-			.mobileHide{display: inline-block !important;}
-			display: flex;
-			flex-wrap: wrap;
-			&Row{
-				display: flex !important;
-				justify-content: space-between;
-				flex-wrap: nowrap !important;
-				width: 100%;
-				img{
-					max-width: 290px !important;
-					height: 450px !important;
-					margin-right: 20px;
-					&:last-child{
-						margin-right: 0px;
-					}
-				}
-				
-				&Plug{
-					width: 100%;
-					display: flex;
-					justify-content: center;
-					align-items: center;
-					max-width: none !important;
-					height: 450px !important;
-					border: 1px solid $main;
-					img{
-						width: 247px !important;
-						height: 25px !important;
-					}
-				}
-			}
-			&Grid{display: none !important;}
-		}
-	}
-}
 
 // @media screen and (min-width: 1520px) {
 // 	.header{
-// 		min-height: 1350px !important;
+// 		min-height: 1350px ;
 // 	}
 // }
 
@@ -1111,10 +559,10 @@ input{
 // }
 
 .--activeMenu{
-	transform: translateY(0%) !important;
+	transform: translateY(0%) ;
 }
 .--activeMenuBtn{
-	transform: rotate(90deg) !important;
+	transform: rotate(90deg) ;
 }
 .custom-select {
 	position: relative;
@@ -1125,9 +573,9 @@ input{
 }
 
 .select-selected {
-	background-color: transparent !important;
-	color: $main !important;
-	padding: 17px 10px !important;
+	background-color: transparent ;
+	color: $main ;
+	padding: 17px 10px ;
 }
 
 .select-selected:after {
@@ -1146,7 +594,7 @@ input{
 
 
 .select-items div,.select-selected {
-	color: $main !important;
+	color: $main ;
 	background-color: transparent;
 	padding: 17px 17px;
 	height: 50px;
@@ -1164,7 +612,7 @@ input{
 	left: 0;
 	right: 0;
 	z-index: 99;
-	color: $main !important;
+	color: $main ;
 	transition: .3s;
 }
 
@@ -1215,7 +663,7 @@ input{
 					width: 100%;
 					img{
 						margin-right: 8px;
-						width: 35px !important;
+						width: 35px ;
 					}
 					&:nth-of-type(1){
 						color: #DC0111;
@@ -1242,7 +690,7 @@ input{
 						color: #0C3595;
 					}
 					&:last-of-type{
-						margin-bottom: 0 !important;
+						margin-bottom: 0 ;
 					}
 				}
 			}
@@ -1329,7 +777,7 @@ input{
 					margin-right: 23px;
 					transition: .3s;
 					&:last-of-type{
-						margin-right: 0 !important;
+						margin-right: 0 ;
 					}
 				}
 				.--dotActive{
@@ -1355,8 +803,8 @@ input{
 		.btn{
 			margin: 0 auto;
 			height: 70px;
-			max-width: 314px !important;
-			line-height: 70px !important;
+			max-width: 314px ;
+			line-height: 70px ;
 			display: block;
 		}
 	}
@@ -1393,7 +841,7 @@ input{
 .goBack{
 	font-weight: 400;
 	font-size: 18px;
-	color: #1B3840 !important;
+	color: #1B3840 ;
 }
 
 .popUpSurrounding{
@@ -1422,20 +870,20 @@ input{
 	&::after{
 
 	}
-	appearance: none !important;
+	appearance: none ;
 	input{
-		max-width: none !important;
-		width: 100% !important;
+		max-width: none ;
+		width: 100% ;
 		display: block;
-		border: none !important;
-		height: 50px !important;
-		border-bottom: 1px solid #737B7D !important;
+		border: none ;
+		height: 50px ;
+		border-bottom: 1px solid #737B7D ;
 		margin-bottom: 30px;
 	}
 	button{
 		height: 60px;
 		line-height: 60px;
-		max-width: none !important;
+		max-width: none ;
 	}
 	.validation{
 		font-style: normal;
@@ -1452,10 +900,10 @@ input{
 		align-items: center;
 		margin-top: 13px;
 		input{
-			width: 16px !important;
-			height: 16px !important;
-			margin: 0 !important;
-			margin-right: 12px !important;
+			width: 16px ;
+			height: 16px ;
+			margin: 0 ;
+			margin-right: 12px ;
 		}
 		p{
 			line-height: 160%;
@@ -1470,5 +918,582 @@ input{
 		position: absolute;
 		top: 34px;
 		right: 14px;
+	}
+}
+@media screen and (min-width:480px){
+	.headerContainer nav button:nth-of-type(2), .headerContainer nav .custom-select {
+		display: inline-block ;
+
+	}
+	.headerContainer nav .custom-select{
+
+		.select-selected{
+			padding-left: 10px;
+			padding-right: 10px;
+		}
+	}
+	.header{
+		.altBtn{
+			display: inline-block ;
+			 
+			&:last-of-type{background-color: transparent;}
+		}
+		.custom-select{display: block ;}
+	}
+	.learningContainerInnerButtons{
+		display: flex;
+		.btn{
+			margin-right: 18px;
+		}
+	}
+	.videoCourseContainerFlex{
+		p{
+			max-width: 437px;
+		}
+	}
+	.aboutMatrixContainerMainInner{
+		grid-template-columns: repeat(2,186px [col-start]);
+		grid-template-rows: repeat(2,100px [row-start]);
+		column-gap: 44px;
+		row-gap: 57px;
+		&Item{align-self: stretch; height: auto ;}
+	}
+	.certificateContainer{
+		p{
+			max-width: 440px;
+		}
+	}
+	.tarotSeeAllContainer{
+		.btn{
+			max-width: 320px ;
+			margin: 0 auto;
+			display: block;
+		}
+		&Image{
+			width: 100%;
+			height: 545px;
+			background-repeat: no-repeat;
+			background-image: url(../images/tarotSeelAll480px.png);
+		}
+		
+	}
+	.allTarotMain{
+		width: 100%;
+		&Container{
+			.mobileHide{display: none ;}
+			display: flex;
+			flex-wrap: wrap;
+			&Row{
+				display: flex ;
+				justify-content: space-between;
+				flex-wrap: wrap;
+				width: 100%;
+				img{
+					max-width: 210px ;
+					height: 326px ;
+				}
+				&Plug{
+					width: 100%;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					max-width: 210px ;
+					height: 326px ;
+					border: 1px solid $main;
+					img{
+						width: 124px ;
+						height: 17px ;
+					}
+				}
+			}
+
+		}
+	}
+	.popUp{
+		padding-left: 20px ;
+		padding-right: 20px ;
+	}
+	.popUpCheckbox p{
+		max-width: none ;
+	}
+	.learningContainerInner{
+		img{
+			width: 100%;
+		}
+	}
+}
+.validation{transform: translateY(-20px); display: block ;}
+.showTablets{
+	display: none;
+}
+@media screen and (min-width:768px){
+	.popUp{
+		max-width: 700px ;
+		padding-left: 30px ;
+		padding-right: 120px ;
+	}
+	.popUpCustomer{
+		div{
+			display: flex;
+			input{
+				&:first-of-type{
+					margin-right: 12px;
+				}
+			}
+		}
+	}
+	.learningContainer{
+		h1, p{
+			max-width: 445px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		img{
+			width: 100%;
+			max-width: 543px;
+		}
+	}
+	.videoCourseContainerFlex{
+		display: flex;
+		flex-direction: row;
+		p{font-size: 18px ;}
+		align-items: center;
+		&:last-child{
+			flex-direction: row-reverse;
+		}
+	}
+	.header{
+		&Container{
+			flex-direction: row ;
+			align-items: center;
+			justify-content: space-between;
+			nav{
+				max-width: 460px ;
+			}
+		}
+		
+	}
+	.tarotSeeAllContainer{
+		&Image{
+			background-image: url(../images/tarotSeelAll768px.png);
+		}
+		.tarotSeeAllContainerSeeAll{
+			a{
+				span{
+					font-weight: 400;
+					font-size: 24px;
+					line-height: 140%;	
+				}
+			}
+		}
+		
+	}
+	.divinationContainerInner{
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		&Item{
+			max-width: 354px ;
+			&:last-of-type{
+				padding-top: 55px;
+			}
+		}
+	}
+
+	.weOffer{
+		.showTablets{display: block ;}
+	}
+	.aboutMatrixContainerMainInner {
+		margin-left: auto; 
+		margin-right: auto;
+	}
+	.aboutMatrixContainerMain img {
+		max-width: 451px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.certificateContainer{
+		p{
+			max-width: none ;
+		}
+	}
+	.startTheCourseContainer{
+		p{
+			max-width: 633px;
+			line-height: 140%;
+			margin: 0 auto;
+			margin-bottom: 40px;
+
+		}
+	}
+	.weOfferContainerGrid{
+		grid-template-columns: repeat(2, auto [col-start]) ;
+		grid-template-rows: repeat(4, auto [row-start]) ;
+		margin-bottom: 27px;
+		button{
+			display: none;
+		}
+		justify-content: space-evenly;
+		&Item{
+			max-width: 236px;
+			width: 100%;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			img{
+				width: 52px;
+			}
+		}
+	}
+	
+
+	.--huge{
+		font-size: 24px ;
+	}
+
+	.logo{
+		margin-bottom: 0 ;
+	}
+	.allTarotMain{
+		width: 100%;
+		&Container{
+			.mobileHide{display: none;}
+			display: flex;
+			flex-wrap: wrap;
+			&Row{
+				display: none ;
+				justify-content: space-between;
+				flex-wrap: wrap;
+				img{
+					max-width: 210px ;
+					height: 326px ;
+				}
+				&Plug{
+					width: 100%;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					max-width: 210px ;
+					height: 326px ;
+					border: 1px solid $main;
+					img{
+						width: 124px ;
+						height: 17px ;
+					}
+				}
+			}
+			&Grid{
+				display: grid ;
+				grid-template-columns: repeat(3, 225px [col-start]);
+				grid-template-rows: repeat(5, 349px [row-start]);
+				margin: 0 auto;
+				img{
+					max-width: 225px ;
+					height: 349px ;
+				}
+				&Plug{
+					width: 100%;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					max-width: 225px ;
+					height: 349px ;
+					border: 1px solid $main;
+					img{
+						width: 124px ;
+						height: 17px ;
+					}
+				}
+				.mobileHide{display: inline-block ;}
+			}
+		}
+	}
+	.goBack{
+		margin-left: 40px;
+	}
+	.headerContainer .logo{
+		margin-bottom: 0;
+	}
+}
+	
+@media screen and (min-width:1000px){
+	.popUp{
+		max-width: 960px;
+		padding-left: 30px ;
+		padding-right: 382px ;
+		background-position: right 50px;
+		background-repeat: no-repeat;
+		
+		background-image: url(../images/popUp.jpg);
+	}
+
+	.weOfferContainer{
+		.showTablets{
+			display: none ;
+		}
+		.weOfferContainerGrid{
+			grid-template-columns: repeat(3,auto [col-start]);
+			grid-template-rows: repeat(3 ,auto [row-start]);
+			button{
+				display: inline-block;
+				margin-top: 50px;
+			}
+		}
+	}
+
+	.reviewsContainerControl{
+		max-width: 465px;
+		margin: 0 auto;
+	}
+	.learningContainer {
+		text-align: start ;
+		padding-left: 50px;
+		h1, p {
+			margin-left: 0;
+			margin-right: 0;
+			font-size: 60px ;
+			width: 524px;
+			max-width: none;
+			line-height: 70px;
+		}
+		p{font-size: 20px ; line-height: 140%;}
+		.learningContainerInner{
+			display: flex;
+		}
+		.learningContainerInnerButtons{
+			flex-direction: column;
+			max-width: 320px;
+		}
+		img{
+			min-width: 543px;
+			transform: translate(-155px,-50px);
+		}
+	}
+	.aboutMatrixContainerMain{
+		flex-direction: row;
+		align-items: center;
+	}
+	.certificateContainer {
+		p{
+			max-width: 804px ;
+			font-size: 18px ;
+			line-height: 140% ;
+		}
+	}
+	.startTheCourse{
+		p{
+			font-size: 20px ;
+			line-height: 140% ;
+			max-width: 838px;
+		}
+		
+	}
+	.videoCourseContainerFlex{
+		p{
+			max-width: none ;
+		}
+		img{
+			margin-right: 20px ;
+		}
+		
+		&:last-of-type{
+			img{
+				margin-right: 0px ;
+			}
+		}
+	}
+	.tarotSeeAllContainerImage{
+		height: 604px;
+		background-image: url(../images/tarotSeelAll1000px.png);
+	}
+
+	.divinationContainerInnerItem{
+		max-width: 464px ;
+		img{
+			max-width: none;
+		}
+		.btn{
+			max-width: 320px;
+		}
+	}
+	.learningContainerInner{
+		img{
+			transform: none;
+			transform: translateY(-150px);
+			width: 100%;
+			max-width: none;
+		}
+		.learningContainerInnerLeft{
+			max-width: 450px;
+			width: 100%;
+			p{
+				width: auto ;
+			}
+		}
+	}
+	.allTarotMain{
+		width: 100%;
+		&Container{
+			.mobileHide{display: inline-block ;}
+			display: flex;
+			flex-wrap: wrap;
+			&Row{
+				display: flex ;
+				justify-content: space-between;
+				flex-wrap: nowrap ;
+				width: 100%;
+				img{
+					max-width: 210px ;
+					height: 326px ;
+					margin-right: 20px;
+					&:last-child{
+						margin-right: 0px;
+					}
+				}
+				
+				&Plug{
+					width: 100%;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					max-width: none ;
+					height: 326px ;
+					border: 1px solid $main;
+					img{
+						width: 247px ;
+						height: 25px ;
+					}
+				}
+			}
+			&Grid{display: none ;}
+		}
+	}
+}
+@media screen and (min-width: 1105px){
+	.whyYouNeedMatrixContainerInner .whyYouNeedMatrixContainerInnerLeftItem:nth-of-type(6) {left: 723px ;}
+	.whyYouNeedMatrixContainerInner .whyYouNeedMatrixContainerInnerLeftItem:nth-of-type(7) {left: 773px ;}
+	.whyYouNeedMatrixContainerInner .whyYouNeedMatrixContainerInnerLeftItem:nth-of-type(8) {left: 770px ;}
+}
+
+
+@media screen and (min-width:1440px) {
+	.popUp{
+		max-width: 1018px;
+		padding-left: 30px ;
+		padding-right: 440px ;
+		background-position: right 79px;
+		background-repeat: no-repeat;
+		
+		background-image: url(../images/popUp.jpg);
+	}
+	.header{
+		&Container{
+			nav{
+				max-width: none ;
+				button{
+					&:first-of-type{
+						width: 200px ;
+					}
+				}
+			}
+			
+		}
+		.logo{
+			margin-right: 28px;
+		}
+		
+	}
+	.divinationContainerInnerItem{
+		max-width: 598px ;
+	}
+	.headerContainer nav ul{
+		position: static ;
+		width: auto ;
+		height: auto ;
+		flex-direction: row ;
+		transform: none ;
+		padding: 0px ;
+		max-width: 650px ;
+		width: 100% ;
+		justify-content: space-between;
+		align-items: center;
+		margin-right: 30px;
+		background-color: transparent ;
+		color: $main ;
+		li{
+			margin: 0 ;
+			color: $main ;
+			a{color: $main ;}
+		}
+	}
+	
+	.burgermenu{
+		display: none ;
+	}
+
+	.learningContainerInner{
+		img{
+			transform: translateY(-115px) ;
+			width: 100%;
+			max-width: none;
+		}
+	}
+	.videoCourseContainerFlex{
+		img{
+			margin-right: 80px ;
+			margin-left: 0px ;
+		}
+		&:last-of-type{
+			img{
+				margin-right: 0px ;
+				margin-left: 80px;
+			}
+		}
+		p{
+			max-width: none ;
+		}
+	}
+	.startTheCourse{
+		padding-top: 53px ;
+		margin: 0 auto;
+		max-width: 2380px;
+	}
+	.allTarotMain{
+		width: 100%;
+		&Container{
+			.mobileHide{display: inline-block ;}
+			display: flex;
+			flex-wrap: wrap;
+			&Row{
+				display: flex ;
+				justify-content: space-between;
+				flex-wrap: nowrap ;
+				width: 100%;
+				img{
+					max-width: 290px ;
+					height: 450px ;
+					margin-right: 20px;
+					&:last-child{
+						margin-right: 0px;
+					}
+				}
+				
+				&Plug{
+					width: 100%;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					max-width: none ;
+					height: 450px ;
+					border: 1px solid $main;
+					img{
+						width: 247px ;
+						height: 25px ;
+					}
+				}
+			}
+			&Grid{display: none ;}
+		}
 	}
 }

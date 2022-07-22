@@ -172,9 +172,9 @@ h2{
 }
 
 .select-selected {
-	background-color: transparent !important;
-	color: $main !important;
-	padding: 17px 10px !important;
+	background-color: transparent ;
+	color: $main ;
+	padding: 17px 10px ;
 }
 
 .select-selected:after {
@@ -193,7 +193,7 @@ h2{
 
 
 .select-items div,.select-selected {
-	color: $main !important;
+	color: $main ;
 	background-color: transparent;
 	padding: 17px 17px;
 	height: 50px;
@@ -211,7 +211,7 @@ h2{
 	left: 0;
 	right: 0;
 	z-index: 99;
-	color: $main !important;
+	color: $main ;
 	transition: .3s;
 }
 
@@ -241,7 +241,9 @@ h2{
     }
 }
 .main{padding-top: 40px;}
-
+.txtDesktop{
+    display: none;
+}
 .auth{
     width: 100%;
 
@@ -254,10 +256,10 @@ h2{
         line-height: 33px;
         margin-bottom: 40px;
     }
-    h1{
-        text-align: start !important;
-        margin-right: 0 !important;
-        margin-left: 0 !important;
+    .--massive{
+        text-align: start ;
+        margin-right: 0 ;
+        margin-left: 0 ;
     }
     .authContainerName{
         display: flex;
@@ -297,7 +299,7 @@ h2{
         }
     }
     .btn{
-        max-width: none !important;
+        max-width: none ;
         height: 64px;
         line-height: 64px;
         box-shadow: 0px 0px 30px rgba(27, 56, 64, 0.4);
@@ -306,7 +308,7 @@ h2{
         display: block;
         text-align: center;
         margin: 0 auto;
-        color: #808080 !important;
+        color: #808080 ;
         font-weight: 400;
         font-size: 16px;
         line-height: 22px;
@@ -360,7 +362,7 @@ h2{
         }
     }
     .btn{
-        max-width: none !important;
+        max-width: none ;
         height: 64px;
         line-height: 64px;
         box-shadow: 0px 0px 30px rgba(27, 56, 64, 0.4);
@@ -368,468 +370,18 @@ h2{
     
 }
 
-@media screen and (min-width: 480px) {
-    .test{
-        border: none !important;
-        padding-top: 0px !important;
-    }
-    .txtMobile{
-        display: none !important;
-    }
-    .txtDesktop{
-        display: block !important;
-    }
-    .tryForFreeContainerNavigation{
-		justify-content: space-between;
-	}
-    .childrenMatrix{
-        background-size: unset !important;
-    }
-    .managmentMobileItemRow{
-        p{
-            max-width: 212px !important;
-        }
-    }
-    .matrixCompabilityFormRow{
-        display: flex;
-        .input{width: 100%;}
-        .input:last-of-type{
-            margin-left: 20px;
-        }
-    }
-    .pursharesTable{
-        overflow-x: visible !important;
-    }
-    .--massive{
-        font-weight: 400 !important;
-        font-size: 32px !important;
-        line-height: 38px !important;
-    }
-    .authContainerName{
-        flex-direction: row !important;
-        .input{
-            width: 100%;
-            display: block;
-            &:first-of-type{
-                margin-right: 20px;
-            }
-        }
-    }
-    .reanimation{
-        width: 100%;
-        margin: 0 auto !important;
-        margin-bottom: 20px !important;
-        max-width: 572px;
-        &Container{
-            &Top{
-                width: 100%;
-                padding-bottom: 20px;
-                border-bottom: 1px solid #BDBDBD;
-                text-align: center;
-                display: flex;
-                margin-bottom: 60px;
-                img{
-                    display: block;
-                }
-                span{
-                    display: block;
-                    margin: 0 auto;
-                }
-            }
-            input{
-                background: #FFFFFF;
-                border-radius: 4px;
-                width: 100%;
-                height: 54px;
-                font-weight: 400;
-                font-size: 12px;
-                line-height: 25px;
-                color: #626262;
-                padding: 15px;
-                max-width: 477px;
-                margin: 0 auto;
-                display: block;
-            }
-            p{
-                line-height: 132.49%;
-                margin-top: 20px;
-                margin-bottom: 30px;
-                max-width: 477px;
-                margin: 0 auto;
-            }
-            .btn{
-                height: 64px;
-                line-height: 64px;
-                max-width: 477px !important;
-                margin: 0 auto;
-                display: block;
-            }
-        }
-    }
-}
+
 .userArchiveMatrixPersonalBot{
     .btn{
-        margin-bottom: 0px !important;
+        margin-bottom: 0px ;
     }
 }
 .testDesktop{
     .txtDesktopMain{
-        height: 425px!important;
+        height: 425px;
     }
 }
 
-@media screen and (min-width: 768px) {
-
-    .testDesktop{
-        padding: 30px 29px 0 29px !important;
-        max-width: 728px !important;
-        margin: 0 auto !important;
-    }
-    .tryForFreeContainerNavigation{
-		justify-content: center;
-	}
-    .tryForFreeContainerBot{
-        display: flex;
-        justify-content: space-between;
-        &Item{
-            width: 100%;
-            &:first-of-type{
-                margin-right: 34px;
-            }
-        }
-    }
-    .userArchiveMatrixPersonalTop{
-        max-width: 616px ;
-    }
-    .userArchiveMatrixPersonalInnerAccordionLocked{
-        flex-direction: row !important;
-        align-items: center;
-        justify-content: space-between !important;
-        p{
-            margin-bottom: 0 !important;
-            max-width: 340px;
-            text-align: start !important;
-        }
-        .btn{
-            margin-bottom: 0 !important;
-        }
-    }
-    .tarifsContainerSpecific{
-		align-items: center;
-	}
-	.tarifsContainerSpecificItem{
-		max-width: 360px;
-	}
-	.tarifs{
-		background-size: 100% 99% !important;
-	}
-    .managmentMobile{
-        display: none !important;
-    }
-    .matrixCompability{
-        max-width: 473px;
-    }
-    .btn{
-        margin-bottom: 60px;
-    }
-    form{
-        max-width: 477px;
-        width: 100%;
-        margin: 0 auto;
-    }
-    table{
-        width: 614px !important;
-    }
-    .purshares{
-        max-width: 614px !important;
-    }
-
-    .headerContainerDesktop{
-        display: flex !important;
-        width: 100%;
-        justify-content: flex-end;
-        align-items: center;
-        margin-right: 40px;
-        &Profile{
-            display: flex !important;
-            align-items: center;
-            margin-left: 30px;
-            img{
-                margin-right: 10px;
-            }
-        }
-    }
-    .mainLeft{
-        max-width: 477px;
-    }
-    .main{
-        display: flex;
-        max-width: none !important;
-        justify-content: space-between;
-        &Tarif{
-            max-width: 225px;
-            width: 100%;
-            margin-left: 20px ;
-            display: block !important;
-            h4{
-                margin-bottom: 20px;
-            }
-            &Inner{
-                width: 100%;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                text-align: center;
-                min-height: 138px;
-                border: 1px solid $main;
-                color: $main;
-                flex-direction: column;
-                p{
-                    margin-bottom: 29px;
-                }
-            }
-        }
-    }
-    .managment{
-        
-        max-width: 731px !important;
-    }
-    .pursharesTable{display: block !important;}
-    .educationDescrMain{
-        max-width: none !important;
-        width: 100% !important;
-
-    }
-    .educationDescr{
-        max-width: none !important;
-    }
-    .educationDescrInner{
-        padding-right: 191px;
-    }
-}
-
-@media screen and (min-width: 1000px) {
-    .educationAsideItem{
-        width: 100%;
-        margin-right: 0px !important;
-    }
-    .testDesktop{
-        max-width: 907px !important;
-        padding: 30px 41px 0 41px!important;
-    }
-    .educationFlex{
-        display: flex !important;
-        justify-content: center;
-    }
-    .educationMain{
-        display: block !important;
-        max-width: 535px;
-        margin-bottom: 100px;
-        img{
-            width: 100%;
-            margin-bottom: 40px;
-        }
-        h5{
-            font-weight: 500;
-            font-size: 22px;
-            line-height: 26px;
-            margin-bottom: 20px;
-        }
-        ul{
-            width: 100%;
-            padding-left: 25px;
-            margin-bottom: 40px;
-            display: block;
-            li{
-                font-weight: 400;
-                font-size: 18px;
-                line-height: 140%;
-                list-style: disc;
-            }
-        }
-    }
-    .tryForFreeContainerNavigation{
-       img{
-           width: auto !important;
-       }
-    }
-    .videoMain{
-        max-width: none !important;
-        width: 100%;
-        .tryForFreeContainerBotItemItemTime{
-            position: absolute;
-            align-items: center;
-            white-space: nowrap;
-            width: 72px;
-            img{
-                margin: 0 !important;
-                margin-right: 3px !important;
-            }
-        }
-    }
-    .educationAside{
-        max-width: 366px;
-    }
-    .educationAsideMobile{display: none !important;}
-    .educationAsideItem{
-        max-width: 366px;
-        width: 100%;
-        margin-left: 40px;
-
-    }
-
-    .headerContainerMobile{display: none !important;}
-    .headerContainerDesktopTarif{
-        display: block !important;
-        font-weight: 400;
-        font-size: 18px;
-        line-height: 21px;
-        color: #1B3840;
-        span{
-            color: #626262;
-        }
-        margin-right: 30px;
-    }
-    .headerContainerDesktop img{display: inline-block !important;}
-    .wrapperContainer{
-        display: flex;
-    }
-    .aside{
-        display: block !important;
-        border-right: 1px solid #ACC1C6;
-        margin-right: 20px;
-        padding-top: 70px;
-        padding-left: 23px;
-        &Inner{
-            max-width: 222px;
-            width: 100%;
-            margin-right: 100px;
-            color: $main;
-            &Item{
-                margin-bottom: 25px;
-                transition: .3s;
-                cursor: pointer;
-                max-width: fit-content;
-                ul{
-                    padding: 20px 0 0 25px;
-                    li{
-                        font-weight: 400;
-                        font-size: 18px;
-                        line-height: 21px;
-                        color: #626262;
-                        margin-bottom: 15px;
-                        list-style: disc;
-                    }
-                }
-            }
-            .--asideInnerItemActive{color: #F2A873;}
-            .--asideInnerItemNew{
-                position: relative;
-                &::after{
-                    position: absolute;
-                    content: '';
-                    top: -10px;
-                    right: -30px;
-                    height: 36px;
-                    width: 36px;
-                    background-image: url(../images/new.png);
-                }
-            }
-        }
-        .--massive{
-            font-weight: 400 !important;
-            font-size: 20px !important;
-            line-height: 23px !important;
-        }
-    }
-    .main{
-        padding-top: 70px;
-        width: 100%;
-        max-width: 715px;
-    }
-}
-
-@media screen and (min-width: 1440px) {
-
-    .educationAsideMobile{
-        margin-left: 40px !important;
-    }
-    .educationAside{
-        display: block !important;
-    }
-    .educationMain{
-        max-width: 909px !important;
-    }
-    .userArchiveMatrixPersonal{
-        max-width: 907px;
-    }
-    .tarifsContainerSpecific{
-		flex-direction: row !important;
-		justify-content: space-between !important;
-		&:last-of-type{
-			justify-content: center !important;
-			.tarifsContainerSpecificItem{
-				&:first-of-type{
-					margin-right: 37px;
-				}
-			}
-		}
-	}
-	.tarifs{
-		min-height: 1800px !important;
-	}
-    .matrixCompability{
-        max-width: none !important;
-        background-position: right 30px !important;
-    }
-    .matrixCompabilityForm{
-        max-width: 473px;
-    }
-    .aside{
-        margin-right: 60px !important;
-    }
-    .main{
-        max-width: none !important;
-    }
-    .mainTarif{
-        max-width: 375px !important;
-        margin-left: 135px;
-        &Inner{
-            flex-direction: row;
-            min-height: 0px !important;
-            padding-top: 18px !important;
-            padding-bottom: 18px !important;
-            p{
-                margin-bottom: 0;
-                margin-right: 50px;
-            }
-        }
-    }
-    .mainLeft{
-        min-width: 477px !important;
-    }
-    .container {
-        max-width: 1345px;
-    }
-    .tarifsContainerSpecific{
-        .tarifsContainerSpecificItem{
-            max-width: 278px;
-        }
-        &:last-of-type{
-            .tarifsContainerSpecificItem{
-                max-width: 320px;
-            }
-        }
-    }
-    .mobieMargin{
-		margin-left: 34px !important;
-		margin-right: 34px !important;
-        max-width: 320px !important;
-	}
-    .yourMatrix{
-        background-position: right -20px !important;
-    }
-}
 
 .reanimation{
     width: 100%;
@@ -875,8 +427,8 @@ h2{
 }
 
 form{
-    margin-left: 0 !important;
-    margin-right: 0 !important;
+    margin-left: 0 ;
+    margin-right: 0 ;
 }
 
 .purshares{
@@ -1014,7 +566,7 @@ form{
             }
         }
         .btn{
-            max-width: none !important;
+            max-width: none ;
             height: 64px;
             line-height: 64px;
             box-shadow: 0px 0px 30px rgba(27, 56, 64, 0.4);
@@ -1027,7 +579,7 @@ form{
     padding-bottom: 330px;
     .matrixCompabilityForm{
         .input::before{
-            content: "Your name* " !important;
+            content: "Your name* " ;
         }
     }
     .matrixCompabilityFormRow:last-of-type{
@@ -1038,7 +590,7 @@ form{
         }
         
         .input::before{
-            content: "Date of Birth*" !important;
+            content: "Date of Birth*" ;
         }
         
     }
@@ -1065,32 +617,11 @@ form{
     }
     .matrixCompabilityFormRow{
         .input{
-            margin-left: 0px  !important;
+            margin-left: 0px  ;
         }
     }
 }
 
-.childrenMatrix{
-    background-image: url(../images/userChildrenMatrix.png);
-    background-size: 120%;
-    .matrixCompabilityForm{
-        .input::before{
-            content: "Children's name* " !important;
-        }
-    }
-    .matrixCompabilityFormRow:last-of-type{
-        display: flex;
-        .input{
-            width: 100%;
-            margin-right: 15px;
-        }
-        
-        .input::before{
-            content: "Date of Birth*" !important;
-        }
-        
-    }
-}
 
 .archive{
     &Top{
@@ -1099,11 +630,11 @@ form{
         justify-content: space-between;
         padding-bottom: 24px;
         border-bottom: 1px solid #ACC1C6;
-        margin-bottom: 53px !important; 
+        margin-bottom: 53px ; 
         .--massive{
-            border-bottom: none !important;
-            margin-bottom: 0 !important;
-            padding-bottom: 0 !important;
+            border-bottom: none ;
+            margin-bottom: 0 ;
+            padding-bottom: 0 ;
         }
         &Right{
             display: flex;
@@ -1121,7 +652,7 @@ form{
         min-width: 134px;
     }
     th:last-of-type{
-        padding-right: 18px !important;
+        padding-right: 18px ;
     }
 }
 
@@ -1131,14 +662,14 @@ form{
     
     .pursharesTable{display: none;}
     table{
-        width: 100% !important;
-        margin-right: 0 !important;
+        width: 100% ;
+        margin-right: 0 ;
         tr{
              width: 100%;
             td, th{
                 
                 &:first-of-type{
-                    min-width: 250px !important;
+                    min-width: 250px ;
                 }
             }
         }
@@ -1175,10 +706,10 @@ form{
     }
     .btn{
         width: 100%;
-        height: 64px !important;
-        line-height: 64px !important;
+        height: 64px ;
+        line-height: 64px ;
         margin-bottom: 30px;
-        max-width: none !important;
+        max-width: none ;
     }
 }
 
@@ -1207,9 +738,9 @@ form{
 }
 
 .tarifs{
-	min-height: 0px !important;
+	min-height: 0px ;
 	
-	padding-top:0px !important;
+	padding-top:0px ;
 	text-align: center;
 	color: $main;
 	margin-bottom: 70px;
@@ -1308,7 +839,7 @@ form{
 		
 			.tarifsContainerSpecificItemOrange{
 				background-color: $yellowRed;
-				color: $main !important;
+				color: $main ;
 				button{
 					background-color: $main;
 					color: $yellowRed;
@@ -1316,10 +847,10 @@ form{
 				li{
 					list-style: url(../images/tarifs/listMain.svg);
 				}
-				p{color: $main !important;}
+				p{color: $main ;}
 			}
 			.tarifsContainerSpecificItemDefault{
-				color: $main !important;
+				color: $main ;
 				background-color: transparent;
 			}
 		}
@@ -1329,8 +860,8 @@ form{
 .userArchiveMatrixPersonal{
     width: 100%;
     .--massive{
-        font-size: 24px !important;
-        line-height: 24px !important;
+        font-size: 24px ;
+        line-height: 24px ;
     }
     &Top{
         width: 100%;
@@ -1394,7 +925,7 @@ form{
             background-color: $white;
             transition: .3s;
             .--small{
-                line-height: 140% !important;
+                line-height: 140% ;
                 color: $black;
             }
             &Comment{
@@ -1430,7 +961,7 @@ form{
                 text-align: center;
             }
             .btn{
-                max-width: 206px !important;
+                max-width: 206px ;
                 height: 50px;
                 line-height: 50px;
             }
@@ -1462,7 +993,7 @@ form{
         max-width: 440px;
         height: 72px;
         line-height: 72px;
-        border: none !important;
+        border: none ;
         margin-top: 50px;
         margin-bottom: 80px;
     }
@@ -1500,8 +1031,8 @@ form{
         }
         .btn{
             max-width: 282px;
-            height: 50px !important;
-            line-height: 50px !important;
+            height: 50px ;
+            line-height: 50px ;
             margin: 0 auto;
             margin-bottom: 30px;
         }
@@ -1523,7 +1054,7 @@ form{
     width: 100%;
     &Top{
         a{
-            color: #626262 !important;
+            color: #626262 ;
             margin-bottom: 26px;
             display: block;
         }
@@ -1649,11 +1180,11 @@ form{
 					justify-content: center;
 					color: $white;
 					margin-right: 5px;
-					line-height: 33px !important;
+					line-height: 33px ;
 					border-radius: 50%;
 					transition: .3s;
 					p{
-						margin: 0 !important;
+						margin: 0 ;
 					}
 				}	
 			}
@@ -1677,24 +1208,24 @@ form{
 				column-gap: 14px;
 				.altBtn{
 					height: 50px;
-					line-height: 19px !important;
-					border: none !important;
+					line-height: 19px ;
+					border: none ;
 					text-align: center;
 					color: $white;
-					font-size: 16px !important;
+					font-size: 16px ;
 					border-radius: 4px;
 				}
 				.select-selected{
-					border: 1px solid #F2A873 !important;
-					border-radius: 4px !important;
-					text-align: center !important;
+					border: 1px solid #F2A873 ;
+					border-radius: 4px ;
+					text-align: center ;
 				}
 			}
 		}
         &Bot{
             margin-top: 20px;
             width: 100%;
-            text-align: start !important;
+            text-align: start ;
             &Item{
                 margin-bottom: 20px;
                 h6{
@@ -1715,7 +1246,7 @@ form{
                     margin-bottom: 10px;
                     
                     p{
-                        margin: 0 !important;
+                        margin: 0 ;
                     }
                     &Time{
                         position: absolute;
@@ -1744,8 +1275,8 @@ form{
 }
 
 .--educationAsideItemCurrent{
-    background-color: $yellowRed !important;
-    color: $white !important;
+    background-color: $yellowRed ;
+    color: $white ;
     .educationAsideItemCheckBox{
         background-color: $white;
         background-image: url(../images/whitetick.svg);
@@ -1753,7 +1284,7 @@ form{
         background-repeat: no-repeat;
     }
     .educationAsideItemTime{
-        color: $white !important;
+        color: $white ;
     }
 }
 
@@ -1763,7 +1294,7 @@ form{
         background-image: url(../images/lock.svg);
         background-position: center;
         background-repeat: no-repeat;
-        border: none!important;
+        border: none;
     }
 }
 
@@ -1771,14 +1302,14 @@ form{
     max-width: 170px;
     width: 100%;
     display: flex;
-    text-align: start !important;
+    text-align: start ;
     align-items: center;
-    p{margin-bottom: 0 !important;}
+    p{margin-bottom: 0 ;}
     img{
         width: 24px;
         height: 24px;
         margin-right: 10px;
-        margin-bottom: 0 !important;
+        margin-bottom: 0 ;
     }
     span{
         font-weight: 300;
@@ -1821,7 +1352,7 @@ form{
 
     }
     &Main{
-        text-align: start !important;
+        text-align: start ;
         margin-top: 30px;
     }
 }
@@ -1849,7 +1380,7 @@ form{
         }
     }
     &Main{
-        text-align: start !important;
+        text-align: start ;
         height: 520px;
         overflow-y: auto;
         
@@ -1888,11 +1419,11 @@ form{
             width: 344px;
             height: 46px;
             line-height: 46px;
-            border: none !important;
+            border: none ;
             z-index: 10;
         }
         p{
-            max-width: none !important;
+            max-width: none ;
         }
     }
 }
@@ -1916,7 +1447,7 @@ form{
             align-items: center;
             margin-bottom: 10px;
             p{
-                margin : 0 !important;
+                margin : 0 ;
             }
             &CheckBox{
                 position: relative;
@@ -1958,6 +1489,13 @@ form{
             
         }
     }
+}
+.headerContainerDesktop, .headerContainerDesktopTarif,.headerContainer .exitDesktop, .aside, .mainTarif, .exitDesktop{
+    display: none;
+}
+.select-selected{
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .educationDescr{
@@ -2008,5 +1546,521 @@ form{
             line-height: 140%;
             list-style: disc;
         }
+    }
+}
+#Childrensname{
+    margin-left: 0;
+    &::before{
+        content: "Children's name*";
+    }
+}
+#yourName{
+    margin-left: 0;
+    &::before{
+        content: "Your name*";
+    }
+}
+.childrenMatrix{
+    background-image: url(../images/userChildrenMatrix.png);
+    background-size: 120%;
+    .matrixCompabilityForm{
+        .input::before{
+            content: "Children's name*";
+        }
+    }
+    .matrixCompabilityFormRow:last-of-type{
+        display: flex;
+        .input{
+            width: 100%;
+            margin-right: 15px;
+        }
+        
+        .input::before{
+            content: "Date of Birth*" ;
+        }
+        
+    }
+}
+
+@media screen and (min-width: 480px) {
+    .test{
+        border: none ;
+        padding-top: 0px ;
+    }
+    .txtMobile{
+        display: none ;
+    }
+    .txtDesktop{
+        display: block ;
+    }
+    .tryForFreeContainerNavigation{
+		justify-content: space-between;
+	}
+    .childrenMatrix{
+        background-size: unset ;
+    }
+    .managmentMobileItemRow{
+        p{
+            max-width: 212px ;
+        }
+    }
+    .matrixCompabilityFormRow{
+        display: flex;
+        .input{width: 100%;}
+        .input:last-of-type{
+            margin-left: 20px;
+        }
+    }
+    .pursharesTable{
+        overflow-x: visible ;
+    }
+    .--massive{
+        font-weight: 400 ;
+        font-size: 32px ;
+        line-height: 38px ;
+    }
+    .auth .authContainerName{
+        flex-direction: row ;
+        .input{
+            width: 100%;
+            display: block;
+            &:first-of-type{
+                margin-right: 20px;
+            }
+        }
+    }
+    .reanimation{
+        width: 100%;
+        margin: 0 auto ;
+        margin-bottom: 20px ;
+        max-width: 572px;
+        &Container{
+            &Top{
+                width: 100%;
+                padding-bottom: 20px;
+                border-bottom: 1px solid #BDBDBD;
+                text-align: center;
+                display: flex;
+                margin-bottom: 60px;
+                img{
+                    display: block;
+                }
+                span{
+                    display: block;
+                    margin: 0 auto;
+                }
+            }
+            input{
+                background: #FFFFFF;
+                border-radius: 4px;
+                width: 100%;
+                height: 54px;
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 25px;
+                color: #626262;
+                padding: 15px;
+                max-width: 477px;
+                margin: 0 auto;
+                display: block;
+            }
+            p{
+                line-height: 132.49%;
+                margin-top: 20px;
+                margin-bottom: 30px;
+                max-width: 477px;
+                margin: 0 auto;
+            }
+            .btn{
+                height: 64px;
+                line-height: 64px;
+                max-width: 477px ;
+                margin: 0 auto;
+                display: block;
+            }
+        }
+    }
+}
+.educationMain{
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+
+    .testDesktop{
+        padding: 30px 29px 0 29px ;
+        max-width: 728px ;
+        margin: 0 auto ;
+    }
+    .tryForFreeContainerNavigation{
+		justify-content: center;
+	}
+    .tryForFreeContainerBot{
+        display: flex;
+        justify-content: space-between;
+        &Item{
+            width: 100%;
+            &:first-of-type{
+                margin-right: 34px;
+            }
+        }
+    }
+    .userArchiveMatrixPersonalTop{
+        max-width: 616px ;
+    }
+    .userArchiveMatrixPersonalInnerAccordionLocked{
+        flex-direction: row ;
+        align-items: center;
+        justify-content: space-between ;
+        p{
+            margin-bottom: 0 ;
+            max-width: 340px;
+            text-align: start ;
+        }
+        .btn{
+            margin-bottom: 0 ;
+        }
+    }
+    .tarifsContainerSpecific{
+		align-items: center;
+	}
+	.tarifsContainerSpecificItem{
+		max-width: 360px;
+	}
+	.tarifs{
+		background-size: 100% 99% ;
+	}
+    .managmentMobile{
+        display: none ;
+    }
+    .managment .pursharesTable{
+        display: block;
+    }
+    .matrixCompability{
+        max-width: 473px;
+    }
+    .btn{
+        margin-bottom: 60px;
+    }
+    form{
+        max-width: 477px;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .purshares table{
+        width: 614px ;
+    }
+    .purshares{
+        max-width: 614px ;
+    }
+
+    .headerContainerDesktop{
+        display: flex ;
+        width: 100%;
+        justify-content: flex-end;
+        align-items: center;
+        margin-right: 40px;
+        &Profile{
+            display: flex ;
+            align-items: center;
+            margin-left: 30px;
+            img{
+                margin-right: 10px;
+            }
+        }
+    }
+    .mainLeft{
+        max-width: 477px;
+    }
+    .main{
+        display: flex;
+        max-width: none ;
+        justify-content: space-between;
+        &Tarif{
+            max-width: 225px;
+            width: 100%;
+            margin-left: 20px ;
+            display: block ;
+            h4{
+                margin-bottom: 20px;
+            }
+            &Inner{
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                min-height: 138px;
+                border: 1px solid $main;
+                color: $main;
+                flex-direction: column;
+                p{
+                    margin-bottom: 29px;
+                }
+            }
+        }
+    }
+    .managment{
+        
+        max-width: 731px ;
+    }
+    .pursharesTable{display: block ;}
+    .educationDescrMain{
+        max-width: none ;
+        width: 100% ;
+
+    }
+    .educationDescr{
+        max-width: none ;
+    }
+    .educationDescrInner{
+        padding-right: 191px;
+    }
+}
+#videoMain{
+    max-width: none;
+}
+.txtEducationAside{
+    display: none;
+}
+.txtEducationMain{
+    display: block;
+}
+
+
+@media screen and (min-width: 1000px) {
+    .educationAsideItem{
+        width: 100%;
+        margin-right: 0px ;
+    }
+    .headerContainer .exitDesktop{
+        display: block;
+    }
+    .testDesktop{
+        max-width: 907px ;
+        padding: 30px 41px 0 41px;
+    }
+    .educationFlex{
+        display: flex ;
+        justify-content: center;
+    }
+    .educationMain{
+        display: block ;
+        max-width: 535px;
+        margin-bottom: 100px;
+        img{
+            width: 100%;
+            margin-bottom: 40px;
+        }
+        h5{
+            font-weight: 500;
+            font-size: 22px;
+            line-height: 26px;
+            margin-bottom: 20px;
+        }
+        ul{
+            width: 100%;
+            padding-left: 25px;
+            margin-bottom: 40px;
+            display: block;
+            li{
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 140%;
+                list-style: disc;
+            }
+        }
+    }
+    .tryForFreeContainerNavigation{
+       img{
+           width: auto ;
+       }
+    }
+    .videoMain{
+        max-width: none ;
+        width: 100%;
+        .tryForFreeContainerBotItemItemTime{
+            position: absolute;
+            align-items: center;
+            white-space: nowrap;
+            width: 72px;
+            img{
+                margin: 0 ;
+                margin-right: 3px ;
+            }
+        }
+    }
+    .educationAside{
+        max-width: 366px;
+    }
+    .educationAsideMobile{display: none ;}
+    .educationAsideItem{
+        max-width: 366px;
+        width: 100%;
+        margin-left: 40px;
+
+    }
+
+    .headerContainerMobile{display: none ;}
+    .headerContainerDesktopTarif{
+        display: block ;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 21px;
+        color: #1B3840;
+        span{
+            color: #626262;
+        }
+        margin-right: 30px;
+    }
+    .headerContainerDesktop img{display: inline-block ;}
+    .wrapperContainer{
+        display: flex;
+    }
+    .aside{
+        display: block ;
+        border-right: 1px solid #ACC1C6;
+        margin-right: 20px;
+        padding-top: 70px;
+        padding-left: 23px;
+        &Inner{
+            max-width: 222px;
+            width: 100%;
+            margin-right: 100px;
+            color: $main;
+            &Item{
+                margin-bottom: 25px;
+                transition: .3s;
+                cursor: pointer;
+                max-width: fit-content;
+                ul{
+                    padding: 20px 0 0 25px;
+                    li{
+                        font-weight: 400;
+                        font-size: 18px;
+                        line-height: 21px;
+                        color: #626262;
+                        margin-bottom: 15px;
+                        list-style: disc;
+                    }
+                }
+            }
+            .--asideInnerItemActive{color: #F2A873;}
+            .--asideInnerItemNew{
+                position: relative;
+                &::after{
+                    position: absolute;
+                    content: '';
+                    top: -10px;
+                    right: -30px;
+                    height: 36px;
+                    width: 36px;
+                    background-image: url(../images/new.png);
+                }
+            }
+        }
+        .--massive{
+            font-weight: 400 ;
+            font-size: 20px ;
+            line-height: 23px ;
+        }
+    }
+    .main{
+        padding-top: 70px;
+        width: 100%;
+        max-width: 715px;
+    }
+    .tryForFreeContainerNavigation{
+        img{
+            margin-bottom: 0px;
+        }
+    }
+    .navInfo{
+        img{
+            margin-bottom: 0px;
+            max-width: 24px;
+        }
+    }
+}
+
+@media screen and (min-width: 1440px) {
+
+    .educationAsideMobile{
+        margin-left: 40px ;
+    }
+    .educationAside{
+        display: block ;
+    }
+    .educationMain{
+        max-width: 909px ;
+    }
+    .userArchiveMatrixPersonal{
+        max-width: 907px;
+    }
+    .tarifsContainerSpecific{
+		flex-direction: row ;
+		justify-content: space-between ;
+		&:last-of-type{
+			justify-content: center ;
+			.tarifsContainerSpecificItem{
+				&:first-of-type{
+					margin-right: 37px;
+				}
+			}
+		}
+	}
+	.tarifs{
+		min-height: 1800px ;
+	}
+    .matrixCompability{
+        max-width: none ;
+        background-position: right 30px ;
+    }
+    .matrixCompabilityForm{
+        max-width: 473px;
+    }
+    .aside{
+        margin-right: 60px ;
+    }
+    .main{
+        max-width: none ;
+    }
+    .mainTarif{
+        max-width: 375px ;
+        margin-left: 135px;
+        &Inner{
+            flex-direction: row;
+            min-height: 0px ;
+            padding-top: 18px ;
+            padding-bottom: 18px ;
+            p{
+                margin-bottom: 0;
+                margin-right: 50px;
+            }
+        }
+    }
+    .mainLeft{
+        min-width: 477px ;
+    }
+    .container {
+        max-width: 1345px;
+    }
+    .tarifsContainerSpecific{
+        .tarifsContainerSpecificItem{
+            max-width: 278px;
+        }
+        &:last-of-type{
+            .tarifsContainerSpecificItem{
+                max-width: 320px;
+            }
+        }
+    }
+    #tarifsContainerSpecificItemCenter{
+		margin-left: 34px ;
+		margin-right: 34px ;
+        max-width: 320px ;
+	}
+    .yourMatrix{
+        background-position: right -20px ;
     }
 }
